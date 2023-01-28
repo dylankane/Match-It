@@ -1,3 +1,16 @@
 body {
     background: aqua;
 }
+
+header {
+    height: 100%;
+    width: 100%;
+    background: pink;
+}
+
+#main-game {
+    width: 75%;
+    height: 400px;
+    background: pink;
+}
+
