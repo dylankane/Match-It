@@ -12,15 +12,18 @@
       <h1>
         Match It ?
       </h1>
-      <button>New Game</button>
+      <a href="index.html#main-section">New Game</a>
     </header>
-    <section>
+    <section id="main-section">
         <div>
-            <p>moves:<span>0</span></p>
-            <p>time:<span>1:00</span></p>
-            <p>restart</p>
+            <ul class="game-stats">
+                <li>Restart</li>
+                <li>Moves:<span>0</span></li>
+                <li>Time:<span>1:00</span></li>
+            </ul>
         </div>
-            <div id=main-game>
+        <div id="game-area">
+            <div id="main-game">
                 <div class=card></div>
                 <div class=card></div>
                 <div class=card></div>
@@ -34,12 +37,22 @@
                 <div class=card></div>
                 <div class=card></div>
             </div>
+        </div>    
                 <div>
-                    <p>Best Score<span>0</span></p>
-                    <button>How To Play</button>
+                    <ul class="game-stats">
+                        <li>High Score:<span>0</span></li>
+                        <li><a href="index.html#instructions">How To Play</a></li>
+                    </ul>
                 </div>
-
     </section>
+    <secton id="instructions">
+        <div id="how-to-play">
+            <h2>How To Play</h2>
+            <p>Click or tap on a card to flip it and see the hidden image. Then flip a second card to see if you can find the matching image.</p>
+            <p>Try to remember what image is on the back of each card as you flip them, once you have found a pair they will stay flipped.</p>
+            <p>Find as many pairs as you can in 1 minute, and try to complete it in a as few moves as possible.</p>
+        </div>
+    </secton>
     
     <script src="assets/js/script.js"></script>
 </body>
