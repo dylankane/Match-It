@@ -16,6 +16,7 @@ html {
     --yellow: rgb(217, 223, 122);
     --green: rgb(124, 203, 175);
     --grey: rgb(62, 61, 61);
+    --highlight: black;
 }
 
 
@@ -23,6 +24,7 @@ body {
     background: var(--yellow);
     font-family: "space mono", sans-serif;
     color: var(--grey);
+    font-size: large;
 }
 
 
@@ -34,6 +36,15 @@ h1, h2 {
 p {
     text-align: center;
 
+}
+
+a {
+    text-decoration: none;
+    color: var(--grey)
+}
+
+a:hover{
+    color: var(--highlight);
 }
 
 header {
@@ -101,6 +112,11 @@ header {
     height: 100vh;
     background: var(--green);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
+    align-items: center;
+}
+
+#how-to-play > p {
+    padding: 0 75px 0 75px;
 }
