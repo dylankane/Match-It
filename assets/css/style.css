@@ -101,12 +101,28 @@ header {
 }
 
 #main-game {
-    width: 75%;
-    height: 500px;
-    background: white;
+    display: flex;
+    max-width: 75%;
+    height: auto;
+    background: var(--yellow);
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--yellow);
+    background: var(--green);
+    width: 153px;
+    height: 181px;
+    border-radius: 5px;
+}
 
+/*instruction area*/
 #how-to-play {
     width: 100%;
     height: 100vh;
