@@ -79,7 +79,7 @@ header {
     border-radius: 5px;
 }
 
-/* main gaming area*/
+/*Gaming area*/
 
 #main-section { 
     height: 100vh;
@@ -90,8 +90,10 @@ header {
 #game-stats {
     display: flex;
     justify-content: space-around;
+    margin: 25px;
 }
 
+/* Game Board */
 
 #main-game {
     width: 75%;
@@ -142,6 +144,16 @@ header {
     transform: rotateY(180deg)
 }
 
+/* game-controls */
+
+
+#game-controls{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+}
+
+
 
 
 /*instruction area*/
@@ -157,4 +169,11 @@ header {
 
 #how-to-play > p {
     padding: 0 75px 0 75px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
 }
