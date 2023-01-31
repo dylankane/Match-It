@@ -9,7 +9,7 @@ html {
 *{
     margin: 0;
     padding: 0;
-    border: none;
+    border: 0;
 }
 
 :root {
@@ -25,6 +25,7 @@ body {
     font-family: "space mono", sans-serif;
     color: var(--grey);
     font-size: large;
+    position: relative;
 }
 
 
@@ -48,14 +49,14 @@ a:hover{
 }
 
 header {
-    display: flex;
     height: 100vh;
     width: 100%;
     background: var(--green);
-    background-size: cover;
+    display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-evenly;
+    background-size: cover;
+    align-items: center;
 }
 
 #logo {
@@ -78,49 +79,57 @@ header {
 }
 
 /* main gaming area*/
-#main-section {
-    width: 100%;
+
+#main-section { 
     height: 100vh;
-    padding-top: 50px
 }
 
-.game-stats {
-    text-align: center;
-}
+/* Game stat bar */
 
-.game-stats > li {
-    display: inline;
-    padding: 100px;
-}
-
-
-
-#game-area {
+#game-stats {
     display: flex;
-    justify-content: center
+    justify-content: space-around;
 }
+
 
 #main-game {
+    width: 640px;
+    height:640px;
+    margin: auto;
     display: flex;
-    max-width: 75%;
-    height: auto;
-    background: var(--yellow);
-    gap: 10px;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
 }
 
 .card {
+    width:calc(25% - 10px);
+    height:calc(33.333% - 10px);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--yellow);
-    background: var(--green);
-    width: 153px;
-    height: 181px;
-    border-radius: 5px;
+    position: relative;
+    transform: scale(1);
 }
+
+
+.card:active {
+    transform: scale(0.95);
+    transition: transform .2s;
+  }
+   
+
+.front-face, .back-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    background: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 /*instruction area*/
 #how-to-play {
