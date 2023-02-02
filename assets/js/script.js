@@ -1,6 +1,6 @@
 const cards = document.querySelectorAll('.card');
 
-let flipped = false;
+let flipped = 0;
 let firstFlip;
 let secondFlip;
 
@@ -10,24 +10,32 @@ function flipCard() {
 
 
 
-  if(flipped === false) {
-    firstFlip = this.getAttribute("data-image");
-    flipped = true;
+  if(flipped === 0) {
+    firstFlip = this.dataset.image;
+    flipped++;
+
     } else {
-      secondFlip = this.getAttribute("data-image");
+      secondFlip = this.dataset.image;
+      flipped = 0;
 
       if (firstFlip === secondFlip) {
-        let matched = document.querySelectorAll('.card.flip');
-  
-        matched[0].classList.add('matched');
-        matched[1].classList.add('matched');
-          
-      }   
+       
+        // firstFlip.removeEventListener('click', flipCard);
+        // secondFlip.removeEventListener('click', flipCard);
 
+       
+          
+      } else {
+       
+        setTimeout(() => {
+        firstFlip.classList.remove('flip');
+        secondFlip.classList.remove('flip');
+        }, 1500);
+  
+      }  
+ 
     } 
-    // else {
-      // flipped = 1
-    // }
+    
 
     
       console.log({flipped, firstFlip, secondFlip});
