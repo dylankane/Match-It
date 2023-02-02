@@ -127,6 +127,10 @@ header {
     transform: rotateY(180deg)
   }
 
+  .card.flip.matched > .front-face {
+    background: var(--yellow)
+  }
+
 .front-face, .back-face {
     width: 100%;
     height: 100%;

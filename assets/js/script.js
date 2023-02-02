@@ -1,4 +1,5 @@
 const cards = document.querySelectorAll('.card');
+cards.forEach(card => card.addEventListener('click', flipCard));
 
 let flipped = 0;
 let firstFlip;
@@ -11,26 +12,29 @@ function flipCard() {
 
 
   if(flipped === 0) {
-    firstFlip = this.dataset.image;
+    firstFlip = this;
     flipped++;
 
     } else {
-      secondFlip = this.dataset.image;
+      secondFlip = this;
       flipped = 0;
 
-      if (firstFlip === secondFlip) {
+      if (firstFlip.dataset.image === secondFlip.dataset.image) {
        
-        // firstFlip.removeEventListener('click', flipCard);
-        // secondFlip.removeEventListener('click', flipCard);
+        firstFlip.removeEventListener('click', flipCard);
+        secondFlip.removeEventListener('click', flipCard);
 
-       
-          
+        setTimeout (() =>{
+        firstFlip.classList.add('matched');
+        secondFlip.classList.add('matched');
+        }, 700);
+
       } else {
        
         setTimeout(() => {
         firstFlip.classList.remove('flip');
         secondFlip.classList.remove('flip');
-        }, 1500);
+        }, 1000);
   
       }  
  
@@ -44,5 +48,5 @@ function flipCard() {
   
 
 
-cards.forEach(card => card.addEventListener('click', flipCard));
+
 
