@@ -14,14 +14,14 @@
             <div id="logo-card"><h1>M</h1></div>
             <div><h1>Match It ?</h1></div>
         </div>
-            <a href="index.html#main-section">Play Game</a>
+            <a href="index.html#main-section" class="new-game">Play Game</a>
     </header>
     <!-- The main game section -->
     <section id="main-section">
       <!-- Game stats bar, with timer moves and highscore counter -->
         <div id="game-stats">
            <div><p>Moves:<span>0</span></p></div>
-           <div><p>Time:<span>1:00</span></p></div>
+           <div><p>Time:<span id = "counter-span"></span></p></div>
            <div><p>Highscore:<span>0</span></p></div>
         </div>
         <!-- Main game board with all the cards  -->
@@ -78,7 +78,7 @@
             <!-- Game controls bar, with restart buttun and link to drop down to instructions -->
             <div id="game-controls">
                <div><a href="index.html#instructions">How To Play</a></div>
-               <div><p>restart</p></div>
+               <div><p class="new-game">restart</p></div>
             </div>  
     </section>
     <!-- Instructions / how to play section -->
