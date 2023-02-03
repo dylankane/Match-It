@@ -1,30 +1,38 @@
+
+
 const cards = document.querySelectorAll('.card');
 
-let flipped = 0;
-// let lockBoard = false;
+shuffle();
+
+//clock();
+
+// let unflip = document.querySelectorAll('.')
+let flipped = false;
+let lockBoard = false;
 let firstFlip;
 let secondFlip;
-
-
+let newGame = document.querySelectorAll('.new-game');
+cards.forEach(card => card.addEventListener('click', flipCard));
+newGame.forEach(button => button.addEventListener('click', restart));
 
 function flipCard() {
  
-  // if (lockBoard) return;
+  if (lockBoard) return;
 
-// flip cards on click
+
     this.classList.add('flip');
-//store first click
-      if(flipped === 0) {
+
+      if(!flipped) {
         firstFlip = this;
-        flipped++;
-//Store scond click
+        flipped = true;
+
       } else {
         secondFlip = this;
-        flipped = 0;
+        flipped = false;
        
-// checking for match
+
         if (firstFlip.dataset.image === secondFlip.dataset.image) {
-//If a match      
+    
           firstFlip.removeEventListener('click', flipCard);
           secondFlip.removeEventListener('click', flipCard);
 
@@ -32,35 +40,61 @@ function flipCard() {
           firstFlip.classList.add('matched');
           secondFlip.classList.add('matched');
           }, 700);
-//If not a match
+
         } else {
-            // lockBoard = true;
+          lockBoard = true;
 
             setTimeout(() => {
               firstFlip.classList.remove('flip');
               secondFlip.classList.remove('flip');
-              document.getElementsByClassName('.cards').style.pointerEvents = "none";
-              // lockBoard = false;
+              //cards.removeEventListener('click', flipCard);
+              // document.getElementsByClassName('.cards').style.pointerEvents = "none";
+              lockBoard = false;
           }, 1500);
 
         
   
         }  
       }  
-      console.log({flipped, firstFlip, secondFlip});
+      //console.log({flipped, firstFlip, secondFlip});
 }  
+function restart(){
+  
+  firstFlip.classList.remove('flip');
+  secondFlip.classList.remove('flip');
+  firstFlip.classList.remove('matched');
+  secondFlip.classList.remove('matched');
+  firstFlip.addEventListener('click', flipCard);
+  secondFlip.addEventListener('click', flipCard);
 
-function shuffle () {
-  for (let i = 0; i < cards.length; i++ ) {
-   let random = Math.floor(Math.random() *12);
-   cards.style.order = random;
-  }
+  shuffle();
+
 }
 
-  cards.forEach(card => card.addEventListener('click', flipCard));
 
+function shuffle() {
+  
+  cards.forEach(panel => {
+      let randomize = Math.floor(Math.random() * 12);
+      panel.style.order = randomize;
+     
+    }
+  );
+ 
+}
+//   newGame.addEventListener('click', shuffle);
+//   })()
+ 
+
+
+// let counter = document.getElementById('counter-span');
+// let seconds = 45;
+//   setInterval(clock, 1000);   
+
+// function clock() {
+
+//   seconds--;
+//   counter.innerHTML =`${seconds}`
   
 
-
-
-
+// }
