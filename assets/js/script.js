@@ -2,19 +2,25 @@ const cards = document.querySelectorAll('.card');
 let moveCounter = document.getElementById('moves-counter');
 shuffle();
 
-
+let activeGame = false
 let moves = 0
 let flipped = false;
 let lockBoard = false;
 let firstFlip;
 let secondFlip;
 let newGame = document.querySelectorAll('.new-game');
+let totalTime = 5;
+let counter = document.getElementById('counter-span');
+let seconds = totalTime;
+let interval = setInterval(clock, 1000);
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 newGame.forEach(button => button.addEventListener('click', restart));
 
-function flipCard() {
+//Main flip functiom
 
+function flipCard() {
+activeGame = true
   if (lockBoard) return;
 
   this.classList.add('flip');
@@ -33,9 +39,7 @@ function flipCard() {
     secondFlip = this;
     
 
-    if (firstFlip.dataset.image === secondFlip.dataset.image) {
-
-      
+    if (firstFlip.dataset.image === secondFlip.dataset.image) {   
       setTimeout(() => {
         firstFlip.classList.add('matched');
         secondFlip.classList.add('matched');
@@ -44,62 +48,51 @@ function flipCard() {
 
     } else {
      
-
       setTimeout(() => {
         firstFlip.classList.remove('flip','disable');
         secondFlip.classList.remove('flip','disable');
        
         lockBoard = false;
       }, 1500);
-
-
-
     }
   }
-  //console.log({flipped, firstFlip, secondFlip});
-
   moveCounter.innerHTML = `${moves}`;
 }
 
+//Restart function
 
 function restart() {
   cards.forEach(card => {
     card.classList.remove('flip', 'matched','disable');
-  
   });
+
   moves = 0;
   moveCounter.innerHTML = 0;
-
+  counter.innerText = totalTime;
+  seconds = totalTime; 
   shuffle();
-  clock();
-
 }
 
+
+//Shuffle function
 
 function shuffle() {
 
   cards.forEach(panel => {
     let randomize = Math.floor(Math.random() * 12);
     panel.style.order = randomize;
-
   });
-
 }
 
 // Timer countdown
 
-let counter = document.getElementById('counter-span');
-let seconds = 5;
-let interval = setInterval(clock, 1000);
-
 function clock() {
-
+activeGame
   seconds--;
-  counter.innerHTML = `${seconds}`
+  counter.innerHTML = `${seconds}`;
 
   if (seconds <= 0) {
     clearInterval(interval);
     //alert("Time Is Up!!  Press 'restart'; to try again");
-
   }
 }
