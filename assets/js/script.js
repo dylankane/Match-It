@@ -1,9 +1,10 @@
 const cards = document.querySelectorAll('.card');
-let moveCounter = document.getElementById('moves-counter');
+
 shuffle();
 
-let activeGame = false
-let moves = 0
+let activeGame = false;
+let moveCounter = document.getElementById('moves-counter');
+let moves = 0;
 let flipped = false;
 let lockBoard = false;
 let firstFlip;
@@ -20,16 +21,16 @@ newGame.forEach(button => button.addEventListener('click', restart));
 //Main flip functiom
 
 function flipCard() {
-activeGame = true
+  
+activeGame = true;
+
   if (lockBoard) return;
-
+  
   this.classList.add('flip');
-
-  moves++;
   this.classList.add('disable');
+  moves++;
 
   if (!flipped) {
-  
     flipped = true;
     firstFlip = this;
 
@@ -62,9 +63,7 @@ activeGame = true
 //Restart function
 
 function restart() {
-  cards.forEach(card => {
-    card.classList.remove('flip', 'matched','disable');
-  });
+  cards.forEach(card => {card.classList.remove('flip', 'matched','disable');});
 
   moves = 0;
   moveCounter.innerHTML = 0;
@@ -78,11 +77,10 @@ function restart() {
 
 function shuffle() {
 
-  cards.forEach(panel => {
+  cards.forEach(card => {
     let randomize = Math.floor(Math.random() * 12);
-    panel.style.order = randomize;
-  });
-}
+    card.style.order = randomize;
+  });}
 
 // Timer countdown
 
@@ -93,6 +91,5 @@ activeGame
 
   if (seconds <= 0) {
     clearInterval(interval);
-    //alert("Time Is Up!!  Press 'restart'; to try again");
   }
 }
