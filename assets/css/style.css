@@ -181,3 +181,7 @@ header {
     justify-content: space-around;
     height: 200px;
 }
+
+.disable {
+    pointer-events: none;
+}
