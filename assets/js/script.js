@@ -39,6 +39,7 @@ function clock() {
 
   } else {  
     clearInterval(interval);
+    timeModal.style.display = 'block'
   }
 }
 
@@ -96,12 +97,19 @@ function restart() {
   moves = 0;
   moveCounter.innerHTML = `${moves}`;
   // moveCounter.innerHTML = 0;
+  clearInterval(interval);
   counter.innerText = totalTime;
   seconds = totalTime; 
   shuffle();
 }
 
+let timeModal = document.getElementById('time-modal')
+let winModal = document.getElementById('win-modal')
 
-
+// function timeUp () {
+//   if (seconds === 0) {
+//     timeModal.style.display = 'block'
+//   }
+// }
 
 
