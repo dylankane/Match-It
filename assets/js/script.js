@@ -15,6 +15,12 @@ let counter = document.getElementById('counter-span');
 let seconds = totalTime;
 let interval; 
 
+let matches = document.getElementsByClassName('matched')
+let matchesLength = matches.length;
+
+let timeModal = document.getElementById('time-modal')
+let winModal = document.getElementById('win-modal')
+
 cards.forEach(card => card.addEventListener('click', flipCard));
 newGame.forEach(button => button.addEventListener('click', restart));
 
@@ -87,6 +93,9 @@ function flipCard() {
       }, 1500);
     }
   }
+  if (matchesLength === 12) {
+    winModal.style.display = 'block';
+  }
 }
 
 //Restart function
@@ -103,13 +112,14 @@ function restart() {
   shuffle();
 }
 
-let timeModal = document.getElementById('time-modal')
-let winModal = document.getElementById('win-modal')
 
-// function timeUp () {
-//   if (seconds === 0) {
-//     timeModal.style.display = 'block'
+// for (i = 0; i < matches.length; i++ ) {
+//   if ( matches[i] === 12){
+//     winModal.style.display = 'block';
+//     clearInterval(interval);
 //   }
+//   console.log(matches[i]);
 // }
 
 
+console.log(matchesLength)
