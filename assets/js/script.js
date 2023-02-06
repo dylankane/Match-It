@@ -2,7 +2,8 @@ const cards = document.querySelectorAll('.card');
 
 shuffle();
 
-
+let matchCounter = 0
+let finalScore = document.getElementById('final-score')
 let moveCounter = document.getElementById('moves-counter');
 let moves = 0;
 let flipped = false;
@@ -15,8 +16,7 @@ let counter = document.getElementById('counter-span');
 let seconds = totalTime;
 let interval; 
 
-let matches = document.getElementsByClassName('matched')
-let matchesLength = matches.length;
+
 
 let timeModal = document.getElementById('time-modal')
 let winModal = document.getElementById('win-modal')
@@ -45,7 +45,7 @@ function clock() {
 
   } else {  
     clearInterval(interval);
-    timeModal.style.display = 'block'
+    timeModal.style.display = 'block';
   }
 }
 
@@ -82,6 +82,12 @@ function flipCard() {
         secondFlip.classList.add('matched');
         lockBoard = false;
       }, 700);
+      matchCounter++
+        if (matchCounter === 6) {
+          winModal.style.display = 'block';
+          clearInterval(interval);
+          finalScore.innerHTML = `${moves}`;
+        }
 
     } else {
      
@@ -93,9 +99,7 @@ function flipCard() {
       }, 1500);
     }
   }
-  if (matchesLength === 12) {
-    winModal.style.display = 'block';
-  }
+  
 }
 
 //Restart function
@@ -122,4 +126,9 @@ function restart() {
 // }
 
 
-console.log(matchesLength)
+// let matches = document.getElementsByClassName('matched');
+//       let matchesLength = matches.length;
+//       if (matchesLength === 12) {
+//         winModal.style.display = 'block';
+//         console.log('matchesLength')
+//       }
