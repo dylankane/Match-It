@@ -113,9 +113,28 @@ function restart() {
   clearInterval(interval);
   counter.innerText = totalTime;
   seconds = totalTime; 
+  timeModal.style.display = "none";
+  winModal.style.display = "none";
   shuffle();
 }
 
+
+window.onclick = function(event) {
+  if (event.target == timeModal) {
+    timeModal.style.display = "none";
+  }
+}
+
+window.onclick = function(event) {
+  if (event.target == winModal) {
+    winModal.style.display = "none";
+  }
+}
+
+// timeModal.addEventListener('click', closeModal)
+// function closeModal() {
+//   timeModal.style.display = 'none';
+// }
 
 // for (i = 0; i < matches.length; i++ ) {
 //   if ( matches[i] === 12){

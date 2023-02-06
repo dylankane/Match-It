@@ -42,7 +42,8 @@ p {
 
 a {
     text-decoration: none;
-    color: var(--grey)
+    color: var(--grey);
+    cursor: pointer;
 }
 
 a:hover{
@@ -115,6 +116,7 @@ header {
     transform-style: preserve-3d;
     transition: transform .6s;
     margin: 10px;
+    cursor: pointer
 }
 
 
@@ -157,7 +159,9 @@ header {
     margin: 15px;
 }
 
-
+.new-game{
+    cursor: pointer;
+}
 
 
 /*instruction area*/
