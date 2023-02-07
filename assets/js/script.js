@@ -111,7 +111,8 @@ function restart() {
 
   moves = 0;
   moveCounter.innerHTML = `${moves}`;
-  // moveCounter.innerHTML = 0;
+  matchCounter = 0;
+  
   clearInterval(interval);
   counter.innerText = totalTime;
   seconds = totalTime; 

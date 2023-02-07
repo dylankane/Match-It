@@ -121,7 +121,8 @@ header {
     transform-style: preserve-3d;
     transition: transform .6s;
     margin: 10px;
-    cursor: pointer
+    cursor: pointer;
+    justify-content: center;
 }
 
 
@@ -215,12 +216,29 @@ header {
     width: 80%; /* Could be more or less, depending on screen size */
   }
 
-  /* @media screen and (max-width: 700px) {
+  @media screen and (max-width: 600px) {
+    .card {
+    width: calc(33.333% - 10px);
+    height: calc(255 - 10px);
+    margin: 5px;
+    }
+
     #main-game {
-        height: 600
+        width: 90%;
+        height: 65vh;
+        align-content: space-around;
+    }
+
+    #how-to-play > p {
+        padding: 0px 20px 0 20px;
     }
   }
-     */
+    
+  @media screen and (max-width: 400px) {
+    #main-game{
+        width: 95%;
+    }
+  }
 
 
 .disable {
