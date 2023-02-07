@@ -48,9 +48,10 @@ a {
 
 a:hover{
     color: var(--highlight);
-    border: 2px dotted var(--highlight);
+    border-bottom: 2px dotted var(--highlight);
+    /* border: 2px dotted var(--highlight);
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px; */
 }
 
 header {
@@ -168,6 +169,9 @@ header {
 .new-game{
     cursor: pointer;
 }
+.new-game:hover{
+    border-bottom: 2px dotted var(--highlight);
+}
 
 
 /*instruction area*/
@@ -216,7 +220,26 @@ header {
     width: 80%; /* Could be more or less, depending on screen size */
   }
 
-  @media screen and (max-width: 600px) {
+  .modal-btn{
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal-restart{
+    margin: 25px;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .front-face, .back-face {
+        padding: 30px
+       
+    }
+    #main-game {
+        width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
     .card {
     width: calc(33.333% - 10px);
     height: calc(255 - 10px);
@@ -232,11 +255,19 @@ header {
     #how-to-play > p {
         padding: 0px 20px 0 20px;
     }
+
+    .front-face, .back-face {
+        padding: 15px;
+    }
   }
     
   @media screen and (max-width: 400px) {
     #main-game{
         width: 95%;
+        
+    }
+    .front-face, .back-face {
+        padding: 15px;
     }
   }
 
