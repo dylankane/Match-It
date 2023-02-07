@@ -1,3 +1,5 @@
+
+
 const cards = document.querySelectorAll('.card');
 
 shuffle();

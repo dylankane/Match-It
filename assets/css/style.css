@@ -16,8 +16,8 @@ html {
 :root {
     --yellow: rgb(217, 223, 122);
     --green: rgb(124, 203, 175);
-    --grey: rgb(62, 61, 61);
-    --highlight: black;
+    --grey: rgb(65, 65, 65);
+    --highlight: rgb(0, 0, 0);
 }
 
 
@@ -48,6 +48,9 @@ a {
 
 a:hover{
     color: var(--highlight);
+    border: 2px dotted var(--highlight);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 header {
