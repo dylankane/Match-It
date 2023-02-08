@@ -49,9 +49,6 @@ a {
 a:hover{
     color: var(--highlight);
     border-bottom: 2px dotted var(--highlight);
-    /* border: 2px dotted var(--highlight);
-    border-radius: 5px;
-    padding: 5px; */
 }
 
 header {
@@ -124,6 +121,7 @@ header {
     margin: 10px;
     cursor: pointer;
     justify-content: center;
+   
 }
 
 
@@ -133,11 +131,12 @@ header {
   }
    
   .card.flip {
-    transform: rotateY(180deg)
+    transform: rotateY(180deg);
   }
 
   .card.flip.matched > .front-face {
-    background: var(--yellow)
+    background: var(--yellow);
+    box-shadow: none;
   }
 
 .front-face, .back-face {
@@ -151,6 +150,7 @@ header {
     justify-content: center;
     backface-visibility: hidden;
     padding: 50px;
+    box-shadow: 10px 5px 5px var(--grey); /* box shadow from https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
 }
 
 .front-face {
@@ -218,6 +218,7 @@ header {
     border: 1px solid var(--grey);
     border-radius: 20px;
     width: 80%; /* Could be more or less, depending on screen size */
+    box-shadow: 10px 5px 5px var(--highlight);
   }
 
   .modal-btn{
