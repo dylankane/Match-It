@@ -48,6 +48,11 @@ function clock() {
   } else {  
     clearInterval(interval);
     timeModal.style.display = 'block';
+    window.onclick = function(event) {
+      if (event.target == timeModal) {
+        timeModal.style.display = "none";
+      }
+    }
   }
 }
 
@@ -85,10 +90,19 @@ function flipCard() {
         lockBoard = false;
       }, 700);
       matchCounter++
+
         if (matchCounter === 6) {
-          winModal.style.display = 'block';
+          setTimeout (() => {
+          winModal.style.display = 'block';}, 700);
+          
           clearInterval(interval);
           finalScore.innerHTML = `${moves}`;
+
+          window.onclick = function(event) {
+            if (event.target == winModal) {
+              winModal.style.display = "none";
+            }
+          }
         }
 
     } else {
@@ -101,7 +115,6 @@ function flipCard() {
       }, 1500);
     }
   }
-  
 }
 
 //Restart function
@@ -122,11 +135,11 @@ function restart() {
 }
 
 
-window.onclick = function(event) {
-  if (event.target == timeModal) {
-    timeModal.style.display = "none";
-  }
-}
+// window.onclick = function(event) {
+//   if (event.target == timeModal) {
+//     timeModal.style.display = "none";
+//   }
+// }
 
 window.onclick = function(event) {
   if (event.target == winModal) {
@@ -134,23 +147,3 @@ window.onclick = function(event) {
   }
 }
 
-// timeModal.addEventListener('click', closeModal)
-// function closeModal() {
-//   timeModal.style.display = 'none';
-// }
-
-// for (i = 0; i < matches.length; i++ ) {
-//   if ( matches[i] === 12){
-//     winModal.style.display = 'block';
-//     clearInterval(interval);
-//   }
-//   console.log(matches[i]);
-// }
-
-
-// let matches = document.getElementsByClassName('matched');
-//       let matchesLength = matches.length;
-//       if (matchesLength === 12) {
-//         winModal.style.display = 'block';
-//         console.log('matchesLength')
-//       }
