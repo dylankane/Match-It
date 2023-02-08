@@ -13,7 +13,7 @@ let lockBoard = false;
 let firstFlip;
 let secondFlip;
 let newGame = document.querySelectorAll('.new-game');
-let totalTime = 30;
+let totalTime = 45;
 let counter = document.getElementById('counter-span');
 let seconds = totalTime;
 let interval; 
