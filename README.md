@@ -1,14 +1,5 @@
 https://www.freepik.com/search?format=search&query=retro%20games&type=icon   retro gaming icons
 
-freecodecamp.org        https://www.youtube.com/watch?v=ZniVgo8U7ek     flipping card code inspiration
-
-
-
-
-
-
-
-
 
 # MATCH IT
 
@@ -40,17 +31,11 @@ Consider adding a mockup image using the "Am I Responsive" website.
 Here's your deployed site as an example:
 https://ui.dev/amiresponsive?url=https://dylankane.github.io/Match-It
 
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
 
-![screenshot](documentation/mockup.png)
 
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
-https://pandao.github.io/editor.md/en.html
+![mock up](documentation/mockup.png)
+
+
 
 ## UX & UI
 
@@ -98,11 +83,6 @@ I've used CSS `:root` variables to easily update the global colour scheme by cha
 
 ### Typography
 
-Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
-
-Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
-
-
 I have used two fonts for the text on this application. The font "Comfotaa" and the font "Space Mono".I used google fonts for these. Below is a link to the two fonts.
 
 
@@ -124,27 +104,11 @@ The rest of the text is in the "Space Mono". This text font has a retro feel, wh
 - [Space Mono](https://fonts.google.com/specimen/Space+Mono) was used for all other secondary text.
 
 
-Sans Seriff was set in all cases as a back up font with the font family in the CSS file.
+Sans Seriff was set in all cases as a back up font in the font family in the style.css file.
 
 
 
 ## Features
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-
-
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-
 
 In this section I will run through the different features of the project, what their intended use is, and how they work.
 I will then go through some possible features that could be added, to improve the game and its site. Creating an even better experience for the user.
@@ -179,7 +143,23 @@ The status bar, which features both these objects, sits above the main game boar
 ![status bar](documentation/statusbar.png)
 
 
+
 - **Game Board**
+
+This is the area where the game takes place. Made up of a grid of 12 cards. Each card begins face down, the back of each card has the logo of the game "M" in the centre of it. On the hidden face there is one of 6 different images, two pairs of each image. When the user clicks on a card or taps on one with a touchscreen, the card will flip over, with an animation using css styling in the style.css file. This will reveal the face of the card with the image. The user can then click any other of the 11 cards. If image on the two cards that are now flipped face up, match, they will change colour to the yellow, from the green colour, used throughout the project. The images will stay visible on the matched pairs. The user can then go on to flipp another two cards. If they flip two cards that dont have matching images, the cards will flip back over, hiding the images again. The user must continue to flip cards in sets of two until they find all the pairs or until the time runs out. Once the second card has been flipped if not a match the cards flip back over after 1.5 seconds and if a match they change colour after 0.7 seconds, allowing the flip animation to happpen smoothly, andtime for the user to register what has happened. While this is happening, the board is locked and another card cant be flipped until the timeout has finished, stopping three or more cards been flipped at once. When not matched the cards are styled with the green from the sites colour scheme, with rounded corners and box shadowing applied to give the illusion they are raised off the board. these style features are applies within the style.css file of the project.
+
+The cards are created in the index.html file, along with the "M" logo and the image on the face. This makesadding changing or removing cards easy, without having to interfere with the JavaScript code.
+
+Their order is shuffled on loading of the page, by a function called "suffle" in the script.js file. They are also randomly shuffled when the game is restarted from either the button/link under the game board or from either of the two pop up modals, as well as the two "Play Game" buttons/links in the landing area and the intructions area (the "play Game" re shuffle and bring the user to the game board).
+The script.js file, contains the code to activate the flips, compare if they are matches act on that comparison and what happens when the time runs out or all matches are found. 
+![gameboard](documentation/gameboard.png)   
+
+- **Modals**
+
+- **Instructions Area**
+
+- **Footer**
+
 
 
 ### Future Features
@@ -189,12 +169,21 @@ Fantastic! List them here!
 It's always great to have plans for future improvements!
 Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
 
-- Cool new feature #1
-    - Any additional notes about this feature.
-- Cool new feature #2
-    - Any additional notes about this feature.
-- Cool new feature #3
-    - Any additional notes about this feature.
+- Add option to change the images on the cards by theme
+    - A future feature that would be nice to add, is allowing the user to change the images that are on the face of the cards, this could be done by choosing from preset themes that include sets of images. his would be particularly interesting for kids. It could also include more educational content like finding matching words from different languages.
+
+- Add the ability to adjust the timer, by selecting an easy medium or hard level
+    - The difficulty level of the game could be increased or decreased by adjusting the timer. more time to complete making it easier or less to make it more difficult.
+
+- Add the option to increase or decrease the number of cards, 6, 12, 24 etc.
+    - Another way to increase its difficulty level would be adding more cards, also having less cards could introduce an even younger audience.
+
+- Add a highscore counter that can store locally what the users highest score has been.
+    - A simple highscore counter could be added to the game allowing the user to see their previous highest score, this could be done locally just storing on the browser.
+
+-Add a leaderboard where all userof the game have a chance to compete for spots on the leaderboard.
+    -A more detailed leaderboard could also be added in the future, getting the user to enter their name or initials. Then storing their score on a leaderboard, showing the top 10 scores with their usernames.
+
 
 ## Tools & Technologies Used
 
@@ -206,26 +195,14 @@ Feel free to delete any unused items below as necessary.
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
 - [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
-- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) and/or [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
-- [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Materialize](https://materializecss.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
+- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for styling and controlling elements for good responsiveness
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
-- [Python](https://www.python.org) used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
 - [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder) used to help generate the Markdown files.
-- [Flask](https://flask.palletsprojects.com) used as the Python framework for the site.
-- [Django](https://www.djangoproject.com) used as the Python framework for the site.
-- [MongoDB](https://www.mongodb.com) used as the non-relational database management with Flask.
-- [SQLAlchemy](https://www.sqlalchemy.org) used as the relational database management with Flask.
-- [PostgreSQL](https://www.postgresql.org) used as the relational database management.
-- [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
-- [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-- [Cloudinary](https://cloudinary.com) used for online static file storage.
-- [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
-- [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
+
 
 ## Testing
 
@@ -235,7 +212,7 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 The site was deployed to GitHub Pages. The steps to deploy are as follows:
 - In the [GitHub repository](https://github.com/dylankane/Match-It), navigate to the Settings tab 
-- From the source section drop-down menu, select the **Main** Branch, then click "Save".
+- From the source section drop-down menu, select the "Main" Branch, then click "Save".
 - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 The live link can be found [here](https://dylankane.github.io/Match-It)
@@ -283,6 +260,8 @@ In this section you need to reference where you got your content, media, and ext
 It is common practice to use code from other repositories and tutorials,
 however, it is important to be very specific about these sources to avoid plagiarism.
 
+
+
 ### Content
 
 Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
@@ -291,11 +270,32 @@ A few examples have been provided below to give you some ideas.
 Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
 
 | Source | Location | Notes |
-| --- | --- | --- |
+
+| [freecodecamp.org](https://www.youtube.com/watch?v=ZniVgo8U7ek) | main game board JavaScript code (game functionality) | I used some direct code some modified and general info from this tutorial to figure out how to make the main game work, on the javascript side and the css for flipping the cards | 
+
+| [code grind](https://www.youtube.com/watch?v=B6aJpbX_IZU) | main game board JavaScript code (game functionality) | I used some direct code some modified and general info from this tutorial to figure out how to make the main game work, on the javascript side and the css for flipping the cards | 
+
+| [StackOverFlow](https://stackoverflow.com/questions/3536055/stopping-a-javascript-function-when-a-certain-condition-is-met) | Used in flipcard function in the script.js | Helped me understand stopping a function under certain criteria |
+
+| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | main game area (modals) | Used to create interactive pop-up (modal) when the game time runs out or is completed |
+
+| [traversy media](https://www.youtube.com/watch?v=6ophW7Ask_0&t=1446s) | main game area (modals) | helped to understand how the modal works |
+
+| [w3schools](https://www.w3schools.com/jsref/event_onclick.asp) | to exit from modals | Helped me to understand and modify code to exit a modal by clicking the surrounding area with on-click events |
+
+| [DThompsonDev](https://www.youtube.com/watch?v=IOlnFbVLE8s) | timer countdown clock | tutorial used to build the timer countdown clock in the main game area |
+
+|||
+
+
+
+
+
+
 | [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
 | [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
 | [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
-| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | contact page | interactive pop-up (modal) |
+
 | [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
 | [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
 | [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
