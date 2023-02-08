@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Document</title>
+    <title>Match It</title>
 </head>
 <body>
    <!-- Modals -->
@@ -15,18 +15,18 @@
          <p>You ran out of time.</p>
          <p>Press restart to try again</p>
          <div class="modal-btn">
-            <span class="new-game modal-restart">restart</span>
+            <span class="new-game modal-restart">Restart</span>
          </div>
       </div>
    </div>
    <div id="win-modal">
       <div id="win-message">
          <h1>Congratulations!</h1>
-         <p>You have found all the matches.</p>
+         <p>You have found all the matching pairs.</p>
          <p>Press restart to try again, and beat your score.</p>
          <P>Your score was :<span id="final-score"></span></P>
          <div class="modal-btn">
-            <span class="new-game modal-restart">restart</span>
+            <span class="new-game modal-restart">Restart</span>
          </div>
       </div>
    </div>
@@ -34,7 +34,7 @@
     <header>
         <div id="logo">
             <div id="logo-card"><h1>M</h1></div>
-            <div><h1>Match It ?</h1></div>
+            <div><h1>Match It</h1></div>
         </div>
             <a href="index.html#main-section">Play Game</a>
     </header>
@@ -43,7 +43,7 @@
       <!-- Game stats bar, with timer moves and highscore counter -->
         <div id="game-stats">
            <div><p>Moves:<span id="moves-counter">0</span></p></div>
-           <div><p>Time:<span id="counter-span">30</span></p></div>
+           <div><p>Time:<span id="counter-span">45</span></p></div>
            <!-- <div><p>Highscore:<span>0</span></p></div> -->
         </div>
         <!-- Main game board with all the cards  -->
@@ -100,22 +100,22 @@
             <!-- Game controls bar, with restart buttun and link to drop down to instructions -->
             <div id="game-controls">
                <div><a href="index.html#instructions">How To Play</a></div>
-               <div><p class="new-game">restart</p></div>
+               <div><p class="new-game">Restart</p></div>
             </div>  
     </section>
     <!-- Instructions / how to play section -->
     <secton id="instructions">
         <div id="how-to-play">
             <h2>How To Play</h2>
-            <p>Click or tap on a card to flip it and see the hidden image. Then flip a second card to see if you can find the matching image.</p>
-            <p>Try to remember what image is on the back of each card as you flip them, once you have found a pair they will stay flipped.</p>
-            <p>Find as many pairs as you can in 1 minute, and try to complete it in a as few moves as possible.</p>
+            <p>Click or tap on a card to flip it, and see the hidden image. Then flip a second card to see if you can find the matching image.</p>
+            <p>Try to remember what image is on the front of each card face as you flip them, once you have found a pair they will stay flipped.</p>
+            <p>Find as many pairs as you can in 45 seconds, and try to complete it in a as few moves as possible.</p>
             <a class="new-game" href="index.html#main-section">Play Game</a>
             <a href="index.html#footer">V</a>
         </div>
     </secton>
     <footer id="footer">
-      <p>This Game was created by Dylan Kane</p>
+      <p>This game was created by Dylan Kane</p>
       <p>Enjoy \(`>`)/</p>
     </footer>
     
