@@ -1,18 +1,13 @@
-https://www.freepik.com/search?format=search&query=retro%20games&type=icon   retro gaming icons
-
-
 # MATCH IT
 
 
 This is the Match It game. A memory game, designed for kids. The game consists of 12 cards, placed face down. The card faces have 12 images, 6  pairs of images, the aim is to find each set of pairs. The user can click on a card or touch on screen, to flip it over to reveal the card face. A second card then has to be flipped. If the images on these two cards match they will stay flipped over, and change colour. If they are not a match they will flip back over, so the user can no longer see the images. Another two cards can then be flipped, to try and find a matching pair. The idea is the user has to remember which card has which image, allowing them to find all the matching pairs. There is a time limit, so they must find all the pairs before the clock runs out.
 
-This is a simple game, easy to figure out, but engaging. Can be played in a short amount of time. It is fun and helps to develop memory skills. Not meant to be played for hours on end, so it is ideal for parents to allow kids to play, in short bursts. It is quick for the user to understand the rules, and can start a game instantly ant any stage. On the go with a smart phone or tablet, or at home with a laptop or desktop.
+This is a simple game, easy to figure out, but engaging. Can be played in a short amount of time. It is fun and helps to develop memory skills. Not meant to be played for hours on end, so it is ideal for parents to allow kids to play, in short bursts. It is quick for the user to understand the rules, and can start a game instantly at any stage. On the go with a smart phone or tablet, or at home with a laptop or desktop.
 
-Once the page has loaded the cards will be shuffled in to a random order. The game begins, on the first click of a card, starting the timer and counting the number of moves / flips.
-If completed, and all 6 pairs have been found before the timer runs out. A congratulations modal if pop up, telling the user the numer of moves they completed the game in. From that modal they can restart the game, which will re-shuffle the cards into a new random order.
-If the game is not completed within the time, a similar modal will appear letting them know they hve not succeded. Game can be restarted from this modal also, bringing the user back to the main game area.
+Once the page has loaded the cards will be shuffled in to a random order. The game begins, on the first click of a card, starting the timer and counting the number of moves / flips.If completed, and all 6 pairs have been found before the timer runs out. A congratulations modal if pop up, telling the user the number of moves they completed the game in. From that modal they can restart the game, which will re-shuffle the cards into a new random order.If the game is not completed within the time, a similar modal will appear letting them know they have not succeded. The game can be restarted from this modal also, bringing the user back to the main game area.
 
-Although this is aimed at a youger audience it has not been made too childish or gaudish, encouraging all ages to give it a go, either to compete with thir kids or simply as a quick mental break for adults, while having a coffee break, or even on the toilet :). A quick game can clear the head, and be a break from aimless social media scrolling. Stimulating but not too challenging. It can also lead to some competitiveness, trying to beat someone elses score or just your own score. 
+Although this is aimed at a youger audience it has not been made too childish or gaudish, encouraging people all ages to give it a go, either to compete with thir kids or simply as a quick mental break from the grind, while having a coffee break, or even on the toilet :). A quick game can clear the head, and be a break from aimless social media scrolling. Stimulating but not too challenging. It can also lead to some competitiveness, trying to beat someone elses score or just your own score. 
 
 The design is simple, all on one webpage,with very little navigating. A landing area with nothing but a logo, and a play game button. Once the play game button is clicked the page will automatically slide down to he main game area. The background colour changes, and the 12 cards, face down appear in a grid.
 
@@ -25,16 +20,8 @@ The images used on the face of the cards, are a throwback to old retro games, im
 This is meant to resonate with older players of the game and also being colourful and fun for the youger users, which through reseach with my own kids still love playing the old retro games.
 
 
-
-
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
-https://ui.dev/amiresponsive?url=https://dylankane.github.io/Match-It
-
-
-
 ![mock up](documentation/mockup.png)
-
+[responsive mock-up image creater](https://ui.dev/amiresponsive?url=https://dylankane.github.io/Match-It)
 
 
 ## UX & UI
@@ -58,16 +45,12 @@ The grey colour is used for all the text on the site, with the black colour used
 - `#414141` used for primary text. (A dark grey)
 - `#000000` used for secondary highlights. (Black)
 
-Consider adding a link and screenshot for your colour scheme using "coolors".
-https://coolors.co/generate
 
-When you add a colour to the palette, the URL is dynamically updated, making it easier for you to return back to your colour palette later if needed.
+I created the colour scheme myself but here is an image of it visualised on a palette creater. 
+![colour palette](documentation/colourpalette.jpg)
+[colour palette created using coolors.co ](https://coolors.co/7ccbaf-d9df7a-414141-000000)
 
-Example:
 
-I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0-000000) to generate my colour palette.
-
-![screenshot](documentation/coolors.png)
 
 
 I've used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
@@ -164,10 +147,7 @@ The script.js file, contains the code to activate the flips, compare if they are
 
 ### Future Features
 
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
+Here I will list a few ideas I have for the future to furthuer develop this project:
 
 - Add option to change the images on the cards by theme
     - A future feature that would be nice to add, is allowing the user to change the images that are on the face of the cards, this could be done by choosing from preset themes that include sets of images. his would be particularly interesting for kids. It could also include more educational content like finding matching words from different languages.
@@ -187,16 +167,14 @@ Consider adding any helpful links or notes to help remind you in the future, if 
 
 ## Tools & Technologies Used
 
-In this section, you should explain the various tools and technologies used to develop the project.
-Make sure to put a link (where applicable) to the source, and explain what each was used for.
-Some examples have been provided, but this is just a sample only, your project might've used others.
-Feel free to delete any unused items below as necessary.
+In this section, I will list the various tools and technologies used to develop the project. With a link explaining in depth what these tools / technologies are.
+
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
-- [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
-- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for styling and controlling elements for good responsiveness
-- [JavaScript](https://www.javascript.com) used for user interaction on the site.
+- [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable colour scheme throughout the site.
+- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) used for styling and controlling many elements for good responsiveness
+- [JavaScript](https://www.javascript.com) used for user interaction on the site and the main functionallity of the game.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
 - [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
@@ -250,92 +228,74 @@ You can fork this repository by using the following steps:
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
-### Local VS Deployment
-
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on GitHub Pages.
 
 ## Credits
 
-In this section you need to reference where you got your content, media, and extra help from.
-It is common practice to use code from other repositories and tutorials,
-however, it is important to be very specific about these sources to avoid plagiarism.
-
+In this section I will reference where I got my content, media, and extra help from, while creating this project.
 
 
 ### Content
 
-Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
-A few examples have been provided below to give you some ideas.
+Here I will list attribution links to any borrowed code snippets, articles, or resources. There will be tutorials that I followed to create certain sections of the roject, where the code will be copied, some parts changed and some parts modified to get the result I was looking for.
 
-Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
 
-| Source | Location | Notes |
+| Source | Location | Notes | 
 
-| [freecodecamp.org](https://www.youtube.com/watch?v=ZniVgo8U7ek) | main game board JavaScript code (game functionality) | I used some direct code some modified and general info from this tutorial to figure out how to make the main game work, on the javascript side and the css for flipping the cards | 
+| [freecodecamp.org (youtube)](https://www.youtube.com/watch?v=ZniVgo8U7ek) | [freecodecamp.org(github)](https://github.com/code-sketch/memory-game/) | main game board JavaScript code (game functionality) | I used some direct code some modified and general info from this tutorial to figure out how to make the main game work, on the javascript side and the css for flipping the cards | 
 
-| [code grind](https://www.youtube.com/watch?v=B6aJpbX_IZU) | main game board JavaScript code (game functionality) | I used some direct code some modified and general info from this tutorial to figure out how to make the main game work, on the javascript side and the css for flipping the cards | 
+| [Code Grind (youtube)](https://www.youtube.com/watch?v=B6aJpbX_IZU) | main game board JavaScript code (game functionality) | I used some direct code some modified and general info from this tutorial to figure out how to make the main game work, on the javascript side | 
 
 | [StackOverFlow](https://stackoverflow.com/questions/3536055/stopping-a-javascript-function-when-a-certain-condition-is-met) | Used in flipcard function in the script.js | Helped me understand stopping a function under certain criteria |
 
 | [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | main game area (modals) | Used to create interactive pop-up (modal) when the game time runs out or is completed |
 
-| [traversy media](https://www.youtube.com/watch?v=6ophW7Ask_0&t=1446s) | main game area (modals) | helped to understand how the modal works |
+| [Traversy media (youtube)](https://www.youtube.com/watch?v=6ophW7Ask_0&t=1446s) | main game area (modals) | helped to understand how the modal works |
 
 | [w3schools](https://www.w3schools.com/jsref/event_onclick.asp) | to exit from modals | Helped me to understand and modify code to exit a modal by clicking the surrounding area with on-click events |
 
-| [DThompsonDev](https://www.youtube.com/watch?v=IOlnFbVLE8s) | timer countdown clock | tutorial used to build the timer countdown clock in the main game area |
+| [DThompsonDev (youtube)](https://www.youtube.com/watch?v=IOlnFbVLE8s) | timer countdown clock | tutorial used to build the timer countdown clock in the main game area |
 
-|||
+| [codepen](https://codepen.io/masudrana2779/pen/GRqzPdZ) | Timer clock | used to help coding the timer cock |
 
+| [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)  | main game | used to to figure out how the timeout feature works to delay the cards flipping back over, seen it used in first two tutorials listed here |
 
+| [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) | mutiple parts of the JavaScript code| Helped me to understand how the for each loop on an array worked, after seeing them used in tutorials, allowing me to use them in my own code |
 
+| [StackOverFlow](https://stackoverflow.com/questions/26848289/queryselector-vs-getelementbyid) | mutiple parts of the JavaScript code | helped me to utilise the querySelectorAll feature in JavaScript |
 
+| [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) | multipe element selectors in the style.css file| used to understand pointer events to be used across the project |
 
+| [css-tricks.com](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) | style.css | Helped to refresh my understanding of flex box styling in css, used across whole project |
+
+| [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow) | css for main game board | Used to figure out the syntax for box shadowing on the cards |
 
 | [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-| [Chris Beams](https://chris.beams.io/posts/git-commit) | version control | "How to Write a Git Commit Message" |
-| [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | responsive HTML/CSS/JS navbar |
 
-| [W3Schools](https://www.w3schools.com/css/css3_variables.asp) | entire site | how to use CSS :root variables |
-| [Flexbox Froggy](https://flexboxfroggy.com/) | entire site | modern responsive layouts |
-| [Grid Garden](https://cssgridgarden.com) | entire site | modern responsive layouts |
-| [StackOverflow](https://stackoverflow.com/a/2450976) | quiz page | Fisher-Yates/Knuth shuffle in JS |
-| [YouTube](https://www.youtube.com/watch?v=YL1F4dCUlLc) | leaderboard | using `localStorage()` in JS for high scores |
-| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
-| [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
-| [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
+| [Tim Nelson](https://github.com/TravelTimN) | JavaScript | Helped me out a lot with fixing bugs with the timer clock resetting, locking the board from clicks during flipping and un-flipping, fixing commit messages and how to log them more efficiently |
+
 
 ### Media
 
-Use this space to provide attribution links to any images, videos, or audio files borrowed from online.
-A few examples have been provided below to give you some ideas.
-
-If you're the owner (or a close acquaintance) of all media files, then make sure to specify this.
-Let the assessors know that you have explicit rights to use the media files within your project.
-
-Ideally, you should provide an actual link to every media file used, not just a generic link to the main site!
-The list below is by no means exhaustive. Within the Code Institute Slack community, you can find more "free media" links
-by sending yourself the following command: `!freemedia`.
-
 | Source | Location | Type | Notes |
-| --- | --- | --- | --- |
-| [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
-| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
-| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
-| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
-| [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
-| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
-| [Audio Micro](https://www.audiomicro.com/free-sound-effects) | game page | audio | free audio files to generate the game sounds |
-| [Videvo](https://www.videvo.net/) | home page | video | background video on the hero section |
-| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+
+| [ping pong game image/icon](https://www.freepik.com/free-icon/television_14013058.htm#page) | main game board | image in png format | Used as an image for the face of the cards in the game board |
+
+| [gameboy image/icon](https://www.freepik.com/free-icon/game_14829408.htm#page) | main game board | image in png format | Used as an image for the face of the cards in the game board |
+
+| [pac-man image/icon](https://www.freepik.com/free-icon/gamer_14235636.htm#page) | main game board | image in png format | Used as an image for the face of the cards in the game board |
+
+| [mario graphic image/icon](https://www.freepik.com/free-icon/video-game_14356547.htm#) | main game board | image in png format | Used as an image for the face of the cards in the game board |
+
+| [retro console image/icon](https://www.freepik.com/free-icon/console_14383364.htm#) | main game board | image in png format | Used as an image for the face of the cards in the game board |
+
+| [joystick image/icon](https://www.freepik.com/free-icon/joypad_15272140.htm#) | main game board | image in png format | Used as an image for the face of the cards in the game board |
+
 
 ### Acknowledgements
 
-Use this space to provide attribution to any supports that helped, encouraged, or supported you throughout the development stages of this project.
-A few examples have been provided below to give you some ideas.
 
-- I would like to thank my Code Institute mentor, [John/Jane Doe](https://github.com/username) for their support throughout the development of this project.
-- I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
-- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
-- I would like to thank my spouse/partner (John/Jane), for believing in me, and allowing me to make this transition into software development.
-- I would like to thank my employer, for supporting me in my career development change towards becoming a software developer.
+- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project. His amazing patience while going through bugs and other issues with me during our meetings.
+
+- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support,for always having someone to have a look and help with problems iI was having, and an abundance of previously asked questions which ofen had the answer I was looking for.
+
+- I would like to thank my 7 year old son Liam , for helping me with the market research on this project, playing many many online games until he became an expert and my advisor. 
