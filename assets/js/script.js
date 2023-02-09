@@ -1,12 +1,16 @@
 const cards = document.querySelectorAll('.card');
 
-shuffle();
+// Shuffle functioned called early on lading page
 
-let matchCounter = 0 /*set the match counter to 0*/
+shuffle();  
 
-let finalScore = document.getElementById('final-score') /* get the html element to display final score */
-let moveCounter = document.getElementById('moves-counter'); /* get the html element to display  current moves */
-let moves = 0; /* set moves counter to 0 */
+//  multiple variables defined below
+
+let matchCounter = 0 
+
+let finalScore = document.getElementById('final-score') 
+let moveCounter = document.getElementById('moves-counter'); 
+let moves = 0; 
 
 let flipped = false;
 let lockBoard = false;
@@ -23,8 +27,9 @@ let newGame = document.querySelectorAll('.new-game');
 let timeModal = document.getElementById('time-modal')
 let winModal = document.getElementById('win-modal')
 
-cards.forEach(card => card.addEventListener('click', flipCard));
 
+// Event listeners
+cards.forEach(card => card.addEventListener('click', flipCard));
 newGame.forEach(button => button.addEventListener('click', restart));
 
 //Shuffle function
@@ -36,7 +41,10 @@ function shuffle() {
   });
 }
 
-// Timer countdown
+// Timer countdown function
+//called in the flipcard function
+//activating time up modal when clock runs to zero
+
 function activeGame() {
   interval = setInterval(clock, 1000);
 }
@@ -58,7 +66,12 @@ function clock() {
   }
 }
 
-//Main flip functiom
+//Main flip function, activating the timer once moves are at zero,
+// storing each flipped card in a variable to be compaired
+// locking the board while flipping and disabling pointer events on flipped cards
+// if match found appling a class name to be targeted by css
+// if not, disabling the fliped styling and unflipping cards
+// if all pairs found activating win modal
 
 function flipCard() {
 
@@ -123,6 +136,9 @@ function flipCard() {
 
 
 //Restart function
+// setting moves back to zero
+// clock back to beginning
+// re-shuffling cards
 
 function restart() {
   cards.forEach(card => {
