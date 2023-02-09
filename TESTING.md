@@ -26,9 +26,6 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 | Single File | [w3c CSS](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdylankane.github.io%2FMatch-It%2F) | ![screenshot css](documentation/screenshot-w3c-css.png) | Pass: No Erorrs | 
 
 
-
-
-
 ### JavaScript
 
 I have used the recommended [JShint Validator](https://jshint.com) to validate all of my JS files.
@@ -36,53 +33,29 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| script.js | ![screenshot](documentation/screenshot-javascript.png) | "One warning 69 Confusing use of '!'". ( on line 57 of the actual script.js file, the validation found the use of the '!' to be confusing I did origanally write it differently, but i found this way to be less confusing) |
+| script.js | ![screenshot](documentation/screenshot-javascript.png) | "One warning 69 Confusing use of '!'". ( on line 57 of the actual script.js file, the validation found the use of the '!' to be confusing I did origanally write it differently, but I found this way to be less confusing) |
+
 
 ## Browser Compatibility
-
-Use this space to discuss testing the live/deployed site on various browsers.
-
-Consider testing at least 3 different browsers, if available on your system.
-
-Recommended browsers to consider:
-- [Chrome](https://www.google.com/chrome)
-- [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
-- [Edge](https://www.microsoft.com/edge)
-- [Safari](https://support.apple.com/downloads/safari)
-- [Brave](https://brave.com/download)
-- [Opera](https://www.opera.com/download)
-
-**IMPORTANT**: You must provide screenshots of the tested browsers, to "prove" that you've actually tested them.
-
-Please note, there are services out there that can test multiple browser compatibilities at the same time.
-Some of these are paid services, but some are free.
-If you use these, you must provide a link to the source used for attribution, and multiple screenshots of the results.
-
-Sample browser testing documentation:
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
 | Browser | Screenshot | Notes |
 | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browser-chrome.png) | Works as expected |
-| Firefox | ![screenshot](documentation/browser-firefox.png) | Works as expected |
-| Edge | ![screenshot](documentation/browser-edge.png) | Works as expected |
-| Safari | ![screenshot](documentation/browser-safari.png) | Minor CSS differences |
-| Brave | ![screenshot](documentation/browser-brave.png) | Works as expected |
-| Opera | ![screenshot](documentation/browser-opera.png) | Minor differences |
-| Internet Explorer | ![screenshot](documentation/browser-iex.png) | Does not work as expected |
-| x | x | repeat for any other tested browsers |
+| Chrome | ![screenshot chrome](documentation/screenshot-chrome.png) | Works as expected |
+| Firefox | ![screenshot firefox](documentation/screenshot-mozilla.png) | Works as expected |
+| Edge | ![screenshot edge](documentation/screenshot-edge.png) | Scrooling wasnt very smooth, and images on card faces were a bit stretched |
+
 
 ## Responsiveness
-
 
 I've tested my live deployed project on multiple devices to check for responsiveness issues.
 
 | Device | Screenshot | Notes |
 | --- | --- | --- |
 | Mobile (pixel 6a) | ![screenshot mobile](documentation/mobile.png) | Works as expected |
-| Tablet (lenovo) | ![screenshot tablet](documentation/tablet.jpeg) | Works as expected |
-| Tablet (lenovo) | ![screenshot tablet](documentation/tablet-portrait.jpeg) | Issues with images on cards stretching |
+| Tablet landscape (lenovo) | ![screenshot tablet](documentation/tablet.jpeg) | Works as expected |
+| Tablet portrait  (lenovo) | ![screenshot tablet](documentation/tablet-portrait.jpeg) | Issues with images on cards stretching |
 | laptop (pixelbook) | ![screenshot](documentation/laptop.png) | Works as expected |
 | Large Monitor (samsung) | ![screenshot](documentation/monitor.png) | Works as expected|
 
@@ -105,21 +78,13 @@ I have manually test the user interface with this application. The following tab
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
 | --- | --- | --- | --- | --- |
-
 | Single Page site | "Play Game" link in header | scrolls to game board area | pass | works as expected |
-
 | Single Page site | "Restart" link under game board | re-sets game, (shuffle, moves to 0, clock to 45) | pass | works as expected |
-
 | Single Page site | "How To Play" link uneder game board | scrolls to instruction area | pass | works as expected |
-
 | Single Page site | "Play Game" link in intructions area |scrolls to game board and re-sets game  | pass | works as expected |
-
 | Single Page site | "Restart" link in time up modal | closes modal and re-sets game | pass | works as expected |
-
 | Single Page site | "Restart" link in congratulations modal | closes modal and re-sets game | pass | works as expected |
-
 | Single Page site | Clicking a card on the game board | Flips the card over and shows image | pass | works as expected |
-
 | Single Page site | clicking a second card on the game board | Flips a second card shows image, locks other cards from being clicked, if matched two card change colour and are disables from being clicked, if not, will flip back over. the board will be unlocked after either outcome, ready for another two clicks | pass | works as expected |
 
 
@@ -193,23 +158,22 @@ they need to know whether or not you're aware of them as well, and why you've no
 
 Some examples:
 
-- On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
+- On some screen sizes and certain browsers the images on the face of the cards, are being stretched, afecting their appearance. While still usable for the purpose of the game they have to be fixed. This is seen below in the two screenshots. 
 
-    ![screenshot](documentation/unfixed-bug01.png)
+    ![screenshot tablet portrait](documentation/tablet-portrait.jpeg) 
+    ![screenshot edge browser on laptop](documentation/screenshot-edge.png)
 
-    - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
+    - Attempted fix: i have applied styling to the images with media queries and toggled with different flex properties to try to fix the issues. It has improved but not fixed it.
 
-- For PP3, when using a helper `clear()` function, any text above the height of the terminal does not clear, and remains when you scroll up.
 
-    ![screenshot](documentation/unfixed-bug02.png)
+- When the "Play Game" link is clicked from either the landing area or how to play area, the window scrolls to the game board.
+Filling to entire window, however on smaller screened devices, the top tab bar of the browser blocks a bit of the status bar, until the user manually adjusts the screen, making the tab disappear or the tab disappears after a time.
 
-    - Attempted fix: I tried to adjust the terminal size, but it only resizes the actual terminal, not the allowable area for text.
+    ![screenshot](documentation/g)
 
-- When validating HTML with a semantic `section` element, the validator warns about lacking a header `h2-h6`. This is acceptable.
+    - Attempted fix:
 
-    ![screenshot](documentation/unfixed-bug03.png)
 
-    - Attempted fix: this is a known warning and acceptable, and my section doesn't require a header since it's dynamically added via JS.
 
 If you legitimately cannot find any unfixed bugs or warnings, then use the following sentence:
 
