@@ -148,8 +148,8 @@ Here I will list a few ideas I have for the future to furthuer develop this proj
 - Add a highscore counter that can store locally what the users highest score has been.
     - A simple highscore counter could be added to the game allowing the user to see their previous highest score, this could be done locally just storing on the browser.
 
--Add a leaderboard where all userof the game have a chance to compete for spots on the leaderboard.
-    -A more detailed leaderboard could also be added in the future, getting the user to enter their name or initials. Then storing their score on a leaderboard, showing the top 10 scores with their usernames.
+- Add a leaderboard where all userof the game have a chance to compete for spots on the leaderboard.
+    - A more detailed leaderboard could also be added in the future, getting the user to enter their name or initials. Then storing their score on a leaderboard, showing the top 10 scores with their usernames.
 
 
 ## Tools & Technologies Used
@@ -226,55 +226,50 @@ Here I will list attribution links to any borrowed code snippets, articles, or r
 
 
 | Source | Location | Notes | 
+| --- | --- | --- |
+|[freecodecamp.org (youtube)](https://www.youtube.com/watch?v=ZniVgo8U7ek) & [freecodecamp.org(github)](https://github.com/code-sketch/memory-game/)| main game board JavaScript code (game functionality)|I used some direct code some modified and general info from this tutorial to figure out how to make the main game work, on the javascript side and the css for flipping the cards| 
 
-| [freecodecamp.org (youtube)](https://www.youtube.com/watch?v=ZniVgo8U7ek) | [freecodecamp.org(github)](https://github.com/code-sketch/memory-game/) | main game board JavaScript code (game functionality) | I used some direct code some modified and general info from this tutorial to figure out how to make the main game work, on the javascript side and the css for flipping the cards | 
+|[Code Grind (youtube)](https://www.youtube.com/watch?v=B6aJpbX_IZU)|main game board JavaScript code (game functionality)|I used some direct code some modified and general info from this tutorial to figure out how to make the main game work, on the javascript side| 
 
-| [Code Grind (youtube)](https://www.youtube.com/watch?v=B6aJpbX_IZU) | main game board JavaScript code (game functionality) | I used some direct code some modified and general info from this tutorial to figure out how to make the main game work, on the javascript side | 
+|[StackOverFlow](https://stackoverflow.com/questions/3536055/stopping-a-javascript-function-when-a-certain-condition-is-met)|Used in flipcard function in the script.js|Helped me understand stopping a function under certain criteria|
 
-| [StackOverFlow](https://stackoverflow.com/questions/3536055/stopping-a-javascript-function-when-a-certain-condition-is-met) | Used in flipcard function in the script.js | Helped me understand stopping a function under certain criteria |
+|[W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp)|main game area (modals)|Used to create interactive pop-up (modal) when the game time runs out or is completed|
 
-| [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | main game area (modals) | Used to create interactive pop-up (modal) when the game time runs out or is completed |
+|[Traversy media (youtube)](https://www.youtube.com/watch?v=6ophW7Ask_0&t=1446s)|main game area (modals)|helped to understand how the modal works|
 
-| [Traversy media (youtube)](https://www.youtube.com/watch?v=6ophW7Ask_0&t=1446s) | main game area (modals) | helped to understand how the modal works |
+|[w3schools](https://www.w3schools.com/jsref/event_onclick.asp)|to exit from modals|Helped me to understand and modify code to exit a modal by clicking the surrounding area with on-click events|
 
-| [w3schools](https://www.w3schools.com/jsref/event_onclick.asp) | to exit from modals | Helped me to understand and modify code to exit a modal by clicking the surrounding area with on-click events |
+|[DThompsonDev (youtube)](https://www.youtube.com/watch?v=IOlnFbVLE8s)|timer countdown clock|tutorial used to build the timer countdown clock in the main game area|
 
-| [DThompsonDev (youtube)](https://www.youtube.com/watch?v=IOlnFbVLE8s) | timer countdown clock | tutorial used to build the timer countdown clock in the main game area |
+|[codepen](https://codepen.io/masudrana2779/pen/GRqzPdZ)|Timer clock|used to help coding the timer cock|
 
-| [codepen](https://codepen.io/masudrana2779/pen/GRqzPdZ) | Timer clock | used to help coding the timer cock |
+|[mdn web docs](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)|main game|used to to figure out how the timeout feature works to delay the cards flipping back over, seen it used in first two tutorials listed here|
 
-| [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)  | main game | used to to figure out how the timeout feature works to delay the cards flipping back over, seen it used in first two tutorials listed here |
+|[mdn web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)|mutiple parts of the JavaScript code| Helped me to understand how the for each loop on an array worked, after seeing them used in tutorials, allowing me to use them in my own code|
 
-| [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) | mutiple parts of the JavaScript code| Helped me to understand how the for each loop on an array worked, after seeing them used in tutorials, allowing me to use them in my own code |
+|[StackOverFlow](https://stackoverflow.com/questions/26848289/queryselector-vs-getelementbyid)|mutiple parts of the JavaScript code|helped me to utilise the querySelectorAll feature in JavaScript|
 
-| [StackOverFlow](https://stackoverflow.com/questions/26848289/queryselector-vs-getelementbyid) | mutiple parts of the JavaScript code | helped me to utilise the querySelectorAll feature in JavaScript |
+|[mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events)|multipe element selectors in the style.css file|used to understand pointer events to be used across the project|
 
-| [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events) | multipe element selectors in the style.css file| used to understand pointer events to be used across the project |
+|[css-tricks.com](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)|style.css|Helped to refresh my understanding of flex box styling in css, used across whole project|
 
-| [css-tricks.com](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) | style.css | Helped to refresh my understanding of flex box styling in css, used across whole project |
+|[mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)|css for main game board|Used to figure out the syntax for box shadowing on the cards|
 
-| [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow) | css for main game board | Used to figure out the syntax for box shadowing on the cards |
+|[Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder)|README and TESTING|tool to help generate the Markdown files|
 
-| [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-
-| [Tim Nelson](https://github.com/TravelTimN) | JavaScript | Helped me out a lot with fixing bugs with the timer clock resetting, locking the board from clicks during flipping and un-flipping, fixing commit messages and how to log them more efficiently |
+|[Tim Nelson](https://github.com/TravelTimN)|JavaScript|Helped me out a lot with fixing bugs with the timer clock resetting, locking the board from clicks during flipping and un-flipping, fixing commit messages and how to log them more efficiently|
 
 
 ### Media
 
 | Source | Location | Type | Notes |
-
-| [ping pong game image/icon](https://www.freepik.com/free-icon/television_14013058.htm#page) | main game board | image in png format | Used as an image for the face of the cards in the game board |
-
-| [gameboy image/icon](https://www.freepik.com/free-icon/game_14829408.htm#page) | main game board | image in png format | Used as an image for the face of the cards in the game board |
-
-| [pac-man image/icon](https://www.freepik.com/free-icon/gamer_14235636.htm#page) | main game board | image in png format | Used as an image for the face of the cards in the game board |
-
-| [mario graphic image/icon](https://www.freepik.com/free-icon/video-game_14356547.htm#) | main game board | image in png format | Used as an image for the face of the cards in the game board |
-
-| [retro console image/icon](https://www.freepik.com/free-icon/console_14383364.htm#) | main game board | image in png format | Used as an image for the face of the cards in the game board |
-
-| [joystick image/icon](https://www.freepik.com/free-icon/joypad_15272140.htm#) | main game board | image in png format | Used as an image for the face of the cards in the game board |
+| --- | --- | --- | --- |
+|[ping pong game image/icon](https://www.freepik.com/free-icon/television_14013058.htm#page)|main game board|Image in png format|Used as an image for the face of the cards in the game board|
+|[gameboy image/icon](https://www.freepik.com/free-icon/game_14829408.htm#page)|main game board|Image in png format|Used as an image for the face of the cards in the game board|
+|[pac-man image/icon](https://www.freepik.com/free-icon/gamer_14235636.htm#page)|main game board|image in png format|Used as an image for the face of the cards in the game board|
+|[mario graphic image/icon](https://www.freepik.com/free-icon/video-game_14356547.htm#) | main game board|image in png format|Used as an image for the face of the cards in the game board|
+|[retro console image/icon](https://www.freepik.com/free-icon/console_14383364.htm#)|main game board|image in png format|Used as an image for the face of the cards in the game board|
+|[joystick image/icon](https://www.freepik.com/free-icon/joypad_15272140.htm#)|main game board|image in png format|Used as an image for the face of the cards in the game board|
 
 
 ### Acknowledgements
