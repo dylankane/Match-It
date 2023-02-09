@@ -75,130 +75,53 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 ## Responsiveness
 
-Use this space to discuss testing the live/deployed site on various device sizes.
 
-The minimum requirement is for the following 3 tests:
-- Mobile
-- Tablet
-- Desktop
-
-**IMPORTANT**: You must provide screenshots of the tested responsiveness, to "prove" that you've actually tested them.
-
-Using the "amiresponsive" mockup image (or similar) does not suffice the requirements.
-Consider using some of the built-in device sizes in the Developer Tools.
-
-If you have tested the project on your actual mobile phone or tablet, consider also including screenshots of these as well.
-It showcases a higher level of manual tests, and can be seen as a positive inclusion!
-
-Sample responsiveness testing documentation:
-
-I've tested my deployed project on multiple devices to check for responsiveness issues.
+I've tested my live deployed project on multiple devices to check for responsiveness issues.
 
 | Device | Screenshot | Notes |
 | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsive-mobile.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsive-tablet.png) | Works as expected |
-| Desktop | ![screenshot](documentation/responsive-desktop.png) | Works as expected |
-| XL Monitor | ![screenshot](documentation/responsive-xl.png) | Scaling starts to have minor issues |
-| 4K Monitor | ![screenshot](documentation/responsive-4k.png) | Noticeable scaling issues |
-| Google Pixel 7 Pro | ![screenshot](documentation/responsive-pixel.png) | Works as expected |
-| iPhone 14 | ![screenshot](documentation/responsive-iphone.png) | Works as expected |
-| x | x | repeat for any other tested sizes |
+| Mobile (pixel 6a) | ![screenshot mobile](documentation/mobile.png) | Works as expected |
+| Tablet (lenovo) | ![screenshot tablet](documentation/tablet.jpeg) | Works as expected |
+| Tablet (lenovo) | ![screenshot tablet](documentation/tablet-portrait.jpeg) | Issues with images on cards stretching |
+| laptop (pixelbook) | ![screenshot](documentation/laptop.png) | Works as expected |
+| Large Monitor (samsung) | ![screenshot](documentation/monitor.png) | Works as expected|
+
 
 ## Lighthouse Audit
 
-Use this space to discuss testing the live/deployed site's Lighthouse Audit reports.
-Avoid testing the local version (especially if developing in Gitpod), as this can have knock-on effects of performance.
-
-If you don't have Lighthouse in your Developer Tools,
-it can be added as an [extension](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk).
-
-Don't just test the home page (unless it's a single-page application).
-Make sure to test the Lighthouse Audit results for all of your pages.
-
-**IMPORTANT**: You must provide screenshots of the results, to "prove" that you've actually tested them.
-
-Sample Lighthouse testing documentation:
-
-I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+I have also tested my live deployed site using the Lighthouse Audit tool. Done from within he dev tools in chrome. Below are the results.
 
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | Mobile | ![screenshot](documentation/lighthouse-home-mobile.png) | Some minor warnings |
-| Home | Desktop | ![screenshot](documentation/lighthouse-home-desktop.png) | Few warnings |
-| About | Mobile | ![screenshot](documentation/lighthouse-about-mobile.png) | Some minor warnings |
-| About | Desktop | ![screenshot](documentation/lighthouse-about-desktop.png) | Few warnings |
-| Gallery | Mobile | ![screenshot](documentation/lighthouse-gallery-mobile.png) | Slow response time due to large images |
-| Gallery | Desktop | ![screenshot](documentation/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
+| Single page | Laptiop | ![screenshot lighthouse desktop](documentation/lighthouse-one.png) |  |
+| Single Page | Mobile | ![screenshot lighthouse mobile](documentation/lighthouse-two.png) |  |
+
 
 ## Defensive Programming
 
-Defensive programming (defensive design) is extremely important!
+<!-- Defensive programming was manually tested with the below user acceptance testing: -->
 
-When building projects that accept user inputs or forms, you should always test the level of security for each.
-Examples of this could include (not limited to):
-
-Forms:
-- Users cannot submit an empty form
-- Users must enter valid email addresses
-
-PP3 (Python-only):
-- Users must enter a valid letter/word/string when prompted
-- Users must choose from a specific list only
-
-Flask/Django:
-- Users cannot brute-force a URL to navigate to a restricted page
-- Users cannot perform CRUD functionality while logged-out
-- User-A should not be able to manipulate data belonging to User-B, or vice versa
-- Non-Authenticated users should not be able to access pages that require authentication
-- Standard users should not be able to access pages intended for superusers
-
-You'll want to test all functionality on your application, whether it's a standard form,
-or uses CRUD functionality for data manipulation on a database.
-Make sure to include the `required` attribute on any form-fields that should be mandatory.
-Try to access various pages on your site as different user types (User-A, User-B, guest user, admin, superuser).
-
-You should include any manual tests performed, and the expected results/outcome.
-
-Defensive programming was manually tested with the below user acceptance testing:
+I have manually test the user interface with this application. The following table shows the different points of interaction, between the user and site, with the test and result.
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
 | --- | --- | --- | --- | --- |
-| Home Page | | | | |
-| | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery Page | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact Page | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password (twice) | Field will only accept password format | Pass | |
-| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
-| Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password | Field will only accept password format | Pass | |
-| | Click Login button | Redirects user to home page | Pass | |
-| Log Out | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Profile | | | | |
-| | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
-| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
 
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
+| Single Page site | "Play Game" link in header | scrolls to game board area | pass | works as expected |
+
+| Single Page site | "Restart" link under game board | re-sets game, (shuffle, moves to 0, clock to 45) | pass | works as expected |
+
+| Single Page site | "How To Play" link uneder game board | scrolls to instruction area | pass | works as expected |
+
+| Single Page site | "Play Game" link in intructions area |scrolls to game board and re-sets game  | pass | works as expected |
+
+| Single Page site | "Restart" link in time up modal | closes modal and re-sets game | pass | works as expected |
+
+| Single Page site | "Restart" link in congratulations modal | closes modal and re-sets game | pass | works as expected |
+
+| Single Page site | Clicking a card on the game board | Flips the card over and shows image | pass | works as expected |
+
+| Single Page site | clicking a second card on the game board | Flips a second card shows image, locks other cards from being clicked, if matched two card change colour and are disables from being clicked, if not, will flip back over. the board will be unlocked after either outcome, ready for another two clicks | pass | works as expected |
+
 
 ## Bugs
 
@@ -221,23 +144,6 @@ For JavaScript and Python applications, it's best to screenshot the errors to in
 
     - To fix this, I _____________________.
 
-- Python `'ModuleNotFoundError'` when trying to import module from imported package
-
-    ![screenshot](documentation/bug03.png)
-
-    - To fix this, I _____________________.
-
-- Django `TemplateDoesNotExist` at /appname/path appname/template_name.html
-
-    ![screenshot](documentation/bug04.png)
-
-    - To fix this, I _____________________.
-
-- Python `E501 line too long` (93 > 79 characters)
-
-    ![screenshot](documentation/bug04.png)
-
-    - To fix this, I _____________________.
 
 ### GitHub **Issues**
 
