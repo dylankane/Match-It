@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Space+Mono&display=swap');
 
-
+/* general global styles */
 html {
     scroll-behavior: smooth;
 }
@@ -50,7 +50,7 @@ a:hover{
     color: var(--highlight);
     border-bottom: 2px dotted var(--highlight);
 }
-
+ /* header / landing area  */
 header {
     height: 100vh;
     width: 100%;
@@ -150,7 +150,7 @@ header {
     justify-content: center;
     backface-visibility: hidden;
     padding: 50px;
-    box-shadow: 10px 5px 5px var(--grey); /* box shadow from https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
+    box-shadow: 10px 5px 5px var(--grey); 
 }
 
 .front-face {
@@ -199,25 +199,25 @@ header {
 /* maodal styling (from w3 schools "How To Create a Modal Box") */
 
 #time-modal, #win-modal {
-    display: none; /*Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none; 
+    position: fixed;
+    z-index: 1; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.8); 
   }
 
   #time-message, #win-message {
     background-color: var(--green);
     color: var(--grey);
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto; 
     padding: 20px;
     border: 1px solid var(--grey);
     border-radius: 20px;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%; 
     box-shadow: 10px 5px 5px var(--highlight);
   }
 
@@ -229,7 +229,7 @@ header {
   .modal-restart{
     margin: 25px;
   }
-
+ /* media queries for smaller screens */
   @media screen and (max-width: 1000px) {
     .front-face, .back-face {
         padding: 30px
@@ -272,6 +272,7 @@ header {
     }
   }
 
+  /* disable pointer events works better at the end of css file */
 
 .disable {
     pointer-events: none;
