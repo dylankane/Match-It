@@ -1,5 +1,4 @@
-`/* jshint esversion: 11 */`
-
+/* jshint esversion: 11 */
 
 const cards = document.querySelectorAll('.card');
 
@@ -9,9 +8,9 @@ shuffle();
 
 //  multiple variables defined below
 
-let matchCounter = 0 
+let matchCounter = 0;
 
-let finalScore = document.getElementById('final-score') 
+let finalScore = document.getElementById('final-score');
 let moveCounter = document.getElementById('moves-counter'); 
 let moves = 0; 
 
@@ -27,8 +26,8 @@ let interval;
 
 let newGame = document.querySelectorAll('.new-game');
 
-let timeModal = document.getElementById('time-modal')
-let winModal = document.getElementById('win-modal')
+let timeModal = document.getElementById('time-modal');
+let winModal = document.getElementById('win-modal');
 
 
 // Event listeners
@@ -65,7 +64,7 @@ function clock() {
       if (event.target == timeModal) {
         timeModal.style.display = "none";
       }
-    }
+    };
   }
 }
 
@@ -80,7 +79,7 @@ function flipCard() {
 
   if (moves === 0) {
 
-    activeGame()
+    activeGame();
   }
 
 
@@ -107,7 +106,7 @@ function flipCard() {
         secondFlip.classList.add('matched');
         lockBoard = false;
       }, 700);
-      matchCounter++
+      matchCounter++;
 
       if (matchCounter === 6) {
         setTimeout(() => {
@@ -121,7 +120,7 @@ function flipCard() {
           if (event.target == winModal) {
             winModal.style.display = "none";
           }
-        }
+        };
       }
 
     } else {
