@@ -1,6 +1,5 @@
 # MATCH IT
 
-
 This is the Match It game. A memory game, designed for kids. The game consists of 12 cards, placed face down. The card faces have 12 images, 6  pairs of images, the aim is to find each set of pairs. The user can click on a card or touch on screen, to flip it over to reveal the card face. A second card then has to be flipped. If the images on these two cards match they will stay flipped over, and change colour. If they are not a match they will flip back over, so the user can no longer see the images. Another two cards can then be flipped, to try and find a matching pair. The idea is the user has to remember which card has which image, allowing them to find all the matching pairs. There is a time limit, so they must find all the pairs before the clock runs out.
 
 This is a simple game, easy to figure out, but engaging. Can be played in a short amount of time. It is fun and helps to develop memory skills. Not meant to be played for hours on end, so it is ideal for parents to allow kids to play, in short bursts. It is quick for the user to understand the rules, and can start a game instantly at any stage. On the go with a smart phone or tablet, or at home with a laptop or desktop.
@@ -46,11 +45,9 @@ The grey colour is used for all the text on the site, with the black colour used
 - `#000000` used for secondary highlights. (Black)
 
 
-I created the colour scheme myself but here is an image of it visualised on a palette creater. 
+I created the colour scheme myself, but here is an image of it visualised on a palette creater. 
 ![colour palette](documentation/colourpalette.jpg)
 [colour palette created using coolors.co ](https://coolors.co/7ccbaf-d9df7a-414141-000000)
-
-
 
 
 I've used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
@@ -68,27 +65,19 @@ I've used CSS `:root` variables to easily update the global colour scheme by cha
 
 I have used two fonts for the text on this application. The font "Comfotaa" and the font "Space Mono".I used google fonts for these. Below is a link to the two fonts.
 
-
 The "Comfortaa" font has a nice playful look with rounded edges that looks particularly well with the logo. It is only used for h1 and h2 elements.
 
 - "Comfortaa is a rounded geometric sans-serif type design intended for large sizes." (Description form Google Fonts)
-
 
 The rest of the text is in the "Space Mono". This text font has a retro feel, which I think goes well with the images used on the cards, and gives a nostalgic feel to the game.
 
 - "Space Mono is an original fixed-width type family designed by Colophon Foundry for Google Design......Developed for editorial use in headline and display typography, the letterforms infuse a geometric foundation and grotesque details with qualities often found in headline typefaces of the 1960s, many of which have since been co-opted by science fiction films, television, and literature." (Decription from Google Fonts)
 
-
-
-
-
 - [Comfortaa](https://fonts.google.com/specimen/Comfortaa) was used for the primary headers and titles.
 
 - [Space Mono](https://fonts.google.com/specimen/Space+Mono) was used for all other secondary text.
 
-
 Sans Seriff was set in all cases as a back up font in the font family in the style.css file.
-
 
 
 ## Features
@@ -126,7 +115,6 @@ The status bar, which features both these objects, sits above the main game boar
 ![status bar](documentation/statusbar.png)
 
 
-
 - **Game Board**
 
 This is the area where the game takes place. Made up of a grid of 12 cards. Each card begins face down, the back of each card has the logo of the game "M" in the centre of it. On the hidden face there is one of 6 different images, two pairs of each image. When the user clicks on a card or taps on one with a touchscreen, the card will flip over, with an animation using css styling in the style.css file. This will reveal the face of the card with the image. The user can then click any other of the 11 cards. If image on the two cards that are now flipped face up, match, they will change colour to the yellow, from the green colour, used throughout the project. The images will stay visible on the matched pairs. The user can then go on to flipp another two cards. If they flip two cards that dont have matching images, the cards will flip back over, hiding the images again. The user must continue to flip cards in sets of two until they find all the pairs or until the time runs out. Once the second card has been flipped if not a match the cards flip back over after 1.5 seconds and if a match they change colour after 0.7 seconds, allowing the flip animation to happpen smoothly, andtime for the user to register what has happened. While this is happening, the board is locked and another card cant be flipped until the timeout has finished, stopping three or more cards been flipped at once. When not matched the cards are styled with the green from the sites colour scheme, with rounded corners and box shadowing applied to give the illusion they are raised off the board. these style features are applies within the style.css file of the project.
@@ -142,7 +130,6 @@ The script.js file, contains the code to activate the flips, compare if they are
 - **Instructions Area**
 
 - **Footer**
-
 
 
 ### Future Features
@@ -168,7 +155,6 @@ Here I will list a few ideas I have for the future to furthuer develop this proj
 ## Tools & Technologies Used
 
 In this section, I will list the various tools and technologies used to develop the project. With a link explaining in depth what these tools / technologies are.
-
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
