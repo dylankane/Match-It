@@ -1,3 +1,6 @@
+`/* jshint esversion: 11 */`
+
+
 const cards = document.querySelectorAll('.card');
 
 // Shuffle functioned called early on lading page
