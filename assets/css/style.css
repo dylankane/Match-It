@@ -101,7 +101,6 @@ header {
 
 #main-game {
     width: 75%;
-    height: 80vh;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -111,8 +110,8 @@ header {
 }
 
 .card {
-    width:calc(25% - 20px);
-    height:calc(33.333% - 20px);
+    width: 15vw;
+    height: 15vw;
     display: flex;
     position: relative;
     transform: scale(1);
@@ -242,14 +241,13 @@ header {
 
   @media screen and (max-width: 700px) {
     .card {
-    width: calc(33.333% - 10px);
-    height: calc(25% - 10px);
+    width: 23vw;
+    height: 23vw;
     margin: 5px;
     }
 
     #main-game {
         width: 90%;
-        height: 65vh;
         align-content: space-around;
     }
 
