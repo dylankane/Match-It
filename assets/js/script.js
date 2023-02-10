@@ -70,8 +70,6 @@ function clock() {
 }
 
 
-
-
 // Main game function called with a click on a card 
 function flipCard() {
 

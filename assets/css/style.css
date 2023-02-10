@@ -25,7 +25,7 @@ body {
     background: var(--yellow);
     font-family: "space mono", sans-serif;
     color: var(--grey);
-    font-size: small;
+    /* font-size: small; */
     position: relative;
 }
 
@@ -95,7 +95,7 @@ header {
 #game-stats {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 /* Game Board */
@@ -163,7 +163,7 @@ header {
 #game-controls{
     display: flex;
     justify-content: space-around;
-    margin-top: 10px;
+    margin-top: 30px;
 }
 
 .new-game{
@@ -183,12 +183,13 @@ header {
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
-    padding: 0px 20px 0 20px;
 }
 
 #how-to-play > p {
-    padding: 0 75px 0 75px;
+    padding: 0 40px 0 40px;
 }
+
+/* Footer */
 
 #footer {
     display: flex;
@@ -197,7 +198,7 @@ header {
     height: 200px;
 }
 
-/* maodal styling (from w3 schools "How To Create a Modal Box") */
+/* modal styling (from w3 schools "How To Create a Modal Box") */
 
 #time-modal, #win-modal {
     display: none; 
@@ -231,7 +232,13 @@ header {
     margin: 25px;
   }
 
+/* media queries to control responsiveness for different screen sizes */
+
   @media screen and (min-width: 600px ) {
+
+    #main-game {
+        width:80vw;
+    }
 
     .front-face, .back-face {
         padding: 25px;
@@ -239,6 +246,11 @@ header {
     #time-message, #win-message {
         width: 75%;  
     }
+    .card { 
+        width: 15vw;
+        height: 15vw;
+        margin: 10px
+        }
   }
 
   @media screen and (min-width: 750px ) {
@@ -250,15 +262,18 @@ header {
         width:75vw;
     }
 
+    #game-stats {
+        margin-bottom: 10px;
+    }
+
+    #game-controls{
+        margin-top: 10px;
+    }
+
     .front-face, .back-face {
         padding: 30px;
     }
 
-    .card { 
-    width: 15vw;
-    height: 15vw;
-    margin: 10px
-    }
 
     #how-to-play {
         padding: 0px 75px 0 75px;
@@ -284,72 +299,8 @@ header {
     .front-face, .back-face {
         padding: 45px;
     }
-
-    #how-to-play {
-        padding: 0px 150px 0 150px;
-    }
   }
 
- /* media queries for smaller screens */
-  /* @media screen and (max-width: 1000px) {
-    .front-face, .back-face {
-        padding: 30px
-    }
-    #main-game {
-        width: 80%;
-    }
-    #game-stats {
-        margin-top: 5%
-    }
-    #game-controls{
-        margin-bottom: 5%;
-    }
-  } */
-
-  /* @media screen and (max-width: 560px) { */
-    /* .card { */
-    /* width: 23vw;
-    height: 23vw;
-    margin: 5px; */
-    /* } */
-
-    /* #main-game {
-        width: 90%;
-        align-content: space-around;
-    } */
-
-    /* #how-to-play > p {
-        padding: 0px 20px 0 20px;
-    } */
-
-    /* .front-face, .back-face {
-        padding: 15px;
-    } */
-  /* } */
-    /* Media queries for screen sizes up to 400px in width */
-  /* @media screen and (max-width: 450px) { */
-
-    /* body {
-        font-size: small;
-    } */
-    /* #main-game {
-        width: 95%;
-    } */
-    /* .front-face, .back-face {
-        padding: 15px;
-    } */
-    /* #game-stats {
-        margin-top: 20%
-    }
-    #game-controls{
-        margin-bottom: 20%;
-    } */
-    /* #time-message, #win-message {
-        width: 95%
-    } */
-  /* } */
-
-  /* disable pointer events works better at the end of css file */
 
 .disable {
     pointer-events: none;
