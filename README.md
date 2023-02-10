@@ -19,14 +19,12 @@ The images used on the face of the cards, are a throwback to old retro games, im
 This is meant to resonate with older players of the game and also being colourful and fun for the youger users, which through reseach with my own kids still love playing the old retro games.
 
 
-![mock up](documentation/mockup.png)
-[responsive mock-up image creater](https://ui.dev/amiresponsive?url=https://dylankane.github.io/Match-It)
+![mock up](documentation/mock-up.png)
 
 
 ## UX & UI
 
-
-This  game has been designed to encourage use by all ages, but primarily a younger user. The application is very easy to navigate, scrolling to the different sections, or clicking the links in each area to slide to other sections. No navigation buttons to other pages, no back button interaction needed, quick to figure out and simple intructions in as few words as possible. Very little reading needed for kids that might need help reading long pieces of text. The appication has a fun asthetic, with a basic memory skill game , important kids dont think it is too educational.
+This  game has been designed to encourage use by all ages, but primarily a younger user. The application is very easy to navigate, scrolling to the different sections, or clicking the links in each area to slide to other sections. No navigation buttons to other pages, no back button interaction needed, quick to figure out and simple intructions in as few words as possible. Very little reading needed for kids that might need help reading long pieces of text. The appication has a fun asthetic, with a basic memory skill game, important kids dont think it is too educational.
 
 The colours are inviting and stimulating, without beig too gaudish. The same two colours running through the site, are used to differenciate between sections and also link them altogether at the same time. The typography used for the majority of the text has a retro feel linking it astethically to the retro images on the card faces. It's smooth and flows well. It loops back to the main game area easily from all areas and modals.
 
@@ -47,7 +45,7 @@ The grey colour is used for all the text on the site, with the black colour used
 
 I created the colour scheme myself, but here is an image of it visualised on a palette creater. 
 ![colour palette](documentation/colourpalette.jpg)
-[colour palette created using coolors.co ](https://coolors.co/7ccbaf-d9df7a-414141-000000)
+[Colour palette created using coolors.co ](https://coolors.co/7ccbaf-d9df7a-414141-000000)
 
 
 I've used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
@@ -123,14 +121,44 @@ The cards are created in the index.html file, along with the "M" logo and the im
 
 Their order is shuffled on loading of the page, by a function called "suffle" in the script.js file. They are also randomly shuffled when the game is restarted from either the button/link under the game board or from either of the two pop up modals, as well as the two "Play Game" buttons/links in the landing area and the intructions area (the "play Game" re shuffle and bring the user to the game board).
 The script.js file, contains the code to activate the flips, compare if they are matches act on that comparison and what happens when the time runs out or all matches are found. 
-![gameboard](documentation/gameboard.png)   
+
+![Gameboard](documentation/game-board.png)   
 
 - **Modals**
 
+There are two modals programmed into this application. When the user either completes the game or fails to complete it before the timer runs out, a pop up window called a modal will appear on the screen. If the game is completed the modal will congratulate the user, let them know their score, and give them an option to restart the game, to try and beat their score.
+If the user fails to complete the game before timer runs out, a times out modal will appear letting them know that the time is up, and gives them an option to restart the game.
+
+They are both styled the same with the green colour on the background, with rounded corners, linking them aesthetically to the cards in the game. The surrounding area of the window is covered in a transparent black background. The game and main page is still visible, but tinted out, making it clear the page is still in the background. Clicking on this window outside of the modal will also exit the pop up, bringing the user back to the board game allowing them to manually click the restart button.
+
+They work to clearly notify the user the game has finished. 
+
+![Win Modal](documentation/modal.png)
+![Time Modal](documentation/time-modal.png)
+
 - **Instructions Area**
+
+Below the game board area, there is an instruction area. Where there is a brief description of the rules and outline of the game. This can be accessed by clicking the how to play link below the game board which will scroll the page down to the instuctions area, or manually scroll down. this section takes up the whole window, in kepping with the header and game board area, splitting the page into 3 distinct areas. The instructions are simple and easy to understand without too mush information.
+
+![Instructions area](documentation/instructions.png)
+
 
 - **Footer**
 
+At the bottom of the instructions area there is a small symbol of a 'V' which when clicked will scroll the page down to a simple and small footer, in an alternating background colour to the previous sections. This footer states who the creater of the game is. The name 'Dylan kane' is also a clickable link, linking the user to my github account. This highlights like all the other clickable text on the site with a dashed black bottom border. It is not pointed out as a link or what it links to on purpose as it is meant for the user who is interested in the game, who made it and how it was created.
+
+Below this at the very bottom of the footer is a message 'enjoy' followed by an old school image created by special characters.
+
+![Footer](documentation/footer.png)
+
+
+- **Favicon**
+
+This site also has a favicon, which appears beside the site name in the tab bar of the browser. I created this on the website 'favicon.io. I was able to create one using the colours of the site, identical to the logo in the header, with the same font, but in a circle shape rather that a square, whhich looks better in the tab bar.
+
+The tool I used is free and supplied me with the image and a line of code to put into the head of the index.html file.
+
+![Favicon](documentation/favicon-screenshot.png)
 
 ### Future Features
 
@@ -227,36 +255,21 @@ Here I will list attribution links to any borrowed code snippets, articles, or r
 
 | Source | Location | Notes | 
 | --- | --- | --- |
-|[freecodecamp.org (youtube)](https://www.youtube.com/watch?v=ZniVgo8U7ek) & [freecodecamp.org(github)](https://github.com/code-sketch/memory-game/)| main game board JavaScript code (game functionality)|I used some direct code some modified and general info from this tutorial to figure out how to make the main game work, on the javascript side and the css for flipping the cards| 
-
+|[freecodecamp.org (youtube)](https://www.youtube.com/watch?v=ZniVgo8U7ek)&[freecodecamp.org(github)](https://github.com/code-sketch/memory-game/)| main game board JavaScript code (game functionality)|I used some direct code some modified and general info from this tutorial to figure out how to make the main game work, on the javascript side and the css for flipping the cards| 
 |[Code Grind (youtube)](https://www.youtube.com/watch?v=B6aJpbX_IZU)|main game board JavaScript code (game functionality)|I used some direct code some modified and general info from this tutorial to figure out how to make the main game work, on the javascript side| 
-
 |[StackOverFlow](https://stackoverflow.com/questions/3536055/stopping-a-javascript-function-when-a-certain-condition-is-met)|Used in flipcard function in the script.js|Helped me understand stopping a function under certain criteria|
-
 |[W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp)|main game area (modals)|Used to create interactive pop-up (modal) when the game time runs out or is completed|
-
 |[Traversy media (youtube)](https://www.youtube.com/watch?v=6ophW7Ask_0&t=1446s)|main game area (modals)|helped to understand how the modal works|
-
 |[w3schools](https://www.w3schools.com/jsref/event_onclick.asp)|to exit from modals|Helped me to understand and modify code to exit a modal by clicking the surrounding area with on-click events|
-
 |[DThompsonDev (youtube)](https://www.youtube.com/watch?v=IOlnFbVLE8s)|timer countdown clock|tutorial used to build the timer countdown clock in the main game area|
-
 |[codepen](https://codepen.io/masudrana2779/pen/GRqzPdZ)|Timer clock|used to help coding the timer cock|
-
 |[mdn web docs](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)|main game|used to to figure out how the timeout feature works to delay the cards flipping back over, seen it used in first two tutorials listed here|
-
 |[mdn web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)|mutiple parts of the JavaScript code| Helped me to understand how the for each loop on an array worked, after seeing them used in tutorials, allowing me to use them in my own code|
-
 |[StackOverFlow](https://stackoverflow.com/questions/26848289/queryselector-vs-getelementbyid)|mutiple parts of the JavaScript code|helped me to utilise the querySelectorAll feature in JavaScript|
-
 |[mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events)|multipe element selectors in the style.css file|used to understand pointer events to be used across the project|
-
 |[css-tricks.com](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)|style.css|Helped to refresh my understanding of flex box styling in css, used across whole project|
-
 |[mdn web docs](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)|css for main game board|Used to figure out the syntax for box shadowing on the cards|
-
 |[Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder)|README and TESTING|tool to help generate the Markdown files|
-
 |[Tim Nelson](https://github.com/TravelTimN)|JavaScript|Helped me out a lot with fixing bugs with the timer clock resetting, locking the board from clicks during flipping and un-flipping, fixing commit messages and how to log them more efficiently|
 
 
@@ -270,7 +283,7 @@ Here I will list attribution links to any borrowed code snippets, articles, or r
 |[mario graphic image/icon](https://www.freepik.com/free-icon/video-game_14356547.htm#) | main game board|image in png format|Used as an image for the face of the cards in the game board|
 |[retro console image/icon](https://www.freepik.com/free-icon/console_14383364.htm#)|main game board|image in png format|Used as an image for the face of the cards in the game board|
 |[joystick image/icon](https://www.freepik.com/free-icon/joypad_15272140.htm#)|main game board|image in png format|Used as an image for the face of the cards in the game board|
-
+|[favicon](https://favicon.io/favicon-generator/)|favicon in the browser tab|Image|Built and downloaded from favicon.io, with a line of code in the head of index.html file|
 
 ### Acknowledgements
 
