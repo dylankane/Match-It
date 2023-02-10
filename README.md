@@ -1,23 +1,22 @@
 # MATCH IT
 
-This is the Match It game. A memory game, designed for kids. The game consists of 12 cards, placed face down. The card faces have 12 images, 6  pairs of images, the aim is to find each set of pairs. The user can click on a card or touch on screen, to flip it over to reveal the card face. A second card then has to be flipped. If the images on these two cards match they will stay flipped over, and change colour. If they are not a match they will flip back over, so the user can no longer see the images. Another two cards can then be flipped, to try and find a matching pair. The idea is the user has to remember which card has which image, allowing them to find all the matching pairs. There is a time limit, so they must find all the pairs before the clock runs out.
+This is the Match It game. A memory game, designed for kids. The game consists of 12 cards, placed face down. The card faces have 12 imagesmade up of 6 pairs of images, the aim is to find each set of pairs. The user can click on a card or touch on screen, to flip it over to reveal the card face. A second card then has to be flipped. If the images on these two cards match they will stay flipped over, and change colour. If they are not a match they will flip back over, so the user can no longer see the images. Another two cards can then be flipped, to try and find a matching pair. The idea is the user has to remember which card has which image, allowing them to find all the matching pairs. There is a time limit, so they must find all the pairs before the clock runs out.
 
 This is a simple game, easy to figure out, but engaging. Can be played in a short amount of time. It is fun and helps to develop memory skills. Not meant to be played for hours on end, so it is ideal for parents to allow kids to play, in short bursts. It is quick for the user to understand the rules, and can start a game instantly at any stage. On the go with a smart phone or tablet, or at home with a laptop or desktop.
 
-Once the page has loaded the cards will be shuffled in to a random order. The game begins, on the first click of a card, starting the timer and counting the number of moves / flips.If completed, and all 6 pairs have been found before the timer runs out. A congratulations modal if pop up, telling the user the number of moves they completed the game in. From that modal they can restart the game, which will re-shuffle the cards into a new random order.If the game is not completed within the time, a similar modal will appear letting them know they have not succeded. The game can be restarted from this modal also, bringing the user back to the main game area.
+Once the page has loaded the cards will be shuffled in to a random order. The game begins on the first click of a card, starting the timer and counting the number of moves / flips. If completed, and all 6 pairs have been found before the timer runs out. A congratulations modal will pop up, telling the user the number of moves they completed the game in. From that modal they can restart the game, which will re-shuffle the cards into a new random order.If the game is not completed within the time, a similar modal will appear letting them know they have not succeded. The game can be restarted from this modal also, bringing the user back to the main game area.
 
-Although this is aimed at a youger audience it has not been made too childish or gaudish, encouraging people all ages to give it a go, either to compete with thir kids or simply as a quick mental break from the grind, while having a coffee break, or even on the toilet :). A quick game can clear the head, and be a break from aimless social media scrolling. Stimulating but not too challenging. It can also lead to some competitiveness, trying to beat someone elses score or just your own score. 
+Although this is aimed at a youger audience it has not been made too childish or gaudish, encouraging people of all ages to give it a go, either to compete with thir kids or simply as a quick mental break from the grind, while having a coffee break, or even on the toilet :). A quick game can clear the head, and be a break from aimless social media scrolling. Stimulating but not too challenging. It can also lead to some competitiveness, trying to beat someone elses score or just your own score. 
 
-The design is simple, all on one webpage,with very little navigating. A landing area with nothing but a logo, and a play game button. Once the play game button is clicked the page will automatically slide down to he main game area. The background colour changes, and the 12 cards, face down appear in a grid.
+The design is simple, all on one webpage, with very little navigating. A landing area with nothing but a logo, and a play game button. Once the play game button is clicked the page will automatically slide down to he main game area. The background colour changes, and the 12 cards, face down appear in a grid.
 
 Above the card grid, are two features. The move counter and the timer. Below the grid are two clickable pieces of text. The restart button allowing the user to restart the game at any point. And a how to play button, this when clicked will slide the page down to a section where the instuctions on how to play the game, are shown. Finally below this is a simple footer with the creaters name.
 
 All these sections are coloured with the same scheme, alternating the background colors, as you scroll down. 
 
 It is designed to be fresh, stimulating and as apealling visually to adults and kids.
-The images used on the face of the cards, are a throwback to old retro games, images of a gameboy, old console, a joystick, a mario feature, pacman and a screen with an old ping pong game.
+The images used on the face of the cards, are a throwback to old retro games, images of a gameboy, an old console, a joystick, a mario bros game icon, pacman and a screen with an old ping pong game.
 This is meant to resonate with older players of the game and also being colourful and fun for the youger users, which through reseach with my own kids still love playing the old retro games.
-
 
 ![mock up](documentation/mock-up.png)
 
@@ -33,7 +32,7 @@ The simplicity of the game and its short gameplay time makes it a game, parents 
 ### Colour Scheme
 
 Below is a list of the colours used in the application.
-The first two are the main colours, on which the whole scheme is based (yellow and green) They have a good contrast with each other but actually close to each other on the colour wheel.) The backgrounds of different sections alternate between these two colours, while features like the cards in the game, are coloured in the alternative to the background, until a pair is matched, changing to them to the background colour. 
+The first two are the main colours, on which the whole scheme is based (yellow and green) They have a good contrast with each other but actually close to each other on the colour wheel. The backgrounds of different sections alternate between these two colours, while features like the cards in the game, are coloured in the alternative to the background, until a pair is matched, changing to them to the background colour. 
 
 The grey colour is used for all the text on the site, with the black colour used as a highlight on the text when the cursor hovers over clickable text. A dotted line also apperars underneath the  clickable text/links when hovered. When either the time up modal or the congratulations modal pops up, the surrounding window is coloured black, with an opacity of 0.8, allowing the page to be seen through it.
 
@@ -61,7 +60,7 @@ I've used CSS `:root` variables to easily update the global colour scheme by cha
 
 ### Typography
 
-I have used two fonts for the text on this application. The font "Comfotaa" and the font "Space Mono".I used google fonts for these. Below is a link to the two fonts.
+I have used two fonts for the text on this application. The font "Comfortaa" and the font "Space Mono".I used google fonts for these. Below is a link to the two fonts.
 
 The "Comfortaa" font has a nice playful look with rounded edges that looks particularly well with the logo. It is only used for h1 and h2 elements.
 
@@ -87,15 +86,15 @@ I will then go through some possible features that could be added, to improve th
 
 - **Landing Area**
 
-This is where the user lands on loading the page. It takes up 100% of the viewport / window. Basically the header of the page but acts more as the opening area to the game. It's simply made up of the logo of the game with the name / title under it. Below this is a button / link with the text of "Play Game". This play game link, will scroll the page down to the main game area, it can also be manually scrolled down to. The background colour is the main green colour, listed above in the colour scheme section. The logo which is an "M" in a yellow card, to symbolise the cards of the game area that have to be flipped. When the Play game is hovered over, it turns black and is underlined with a black dotted line, consistent with all clickable text on the site.
-This area is a clear identifier to the user where they are, with one function, to click "play game" to lead them to the game area. It asthetically sets the theme of the site.
+This is where the user lands on loading the page. It takes up 100% of the viewport / window. Basically the header of the page but acts more as the opening area to the game. It's simply made up of the logo of the game with the name / title under it. Below this is a button / link with the text of "Play Game". This play game link, will scroll the page down to the main game area, it can also be manually scrolled down to. The background colour is the main green colour, listed above in the colour scheme section. The logo which is an "M" in a yellow card, to symbolise the cards of the game area that have to be flipped. When the "Play Game" is hovered over, it turns black and is underlined with a black dotted line, consistent with all clickable text on the site.
+This area is a clear identifier to the user where they are, with one function, to click "Play Game" and lead them to the game area. It asthetically sets the theme of the site.
 
 ![landing area](documentation/landingarea.png)
 
 
 - **Main Game Area**
 
-Once scrolled down from the landing area the user will be brought directly to the main game area. This consits of 3 main features, described in depth below. The status bar, the game board, and the controls bar. the main game area, is in keeping with the asthetics of the site. the background colour changes to the yellow, marking it as a clear change from the landing area. the game has already been loaded when the page loaded so everything is ready to go. 
+Once scrolled down from the landing area the user will be brought directly to the main game area. This consits of 3 main features, described in depth below. The status bar, the game board, and the controls bar. The main game area, is in keeping with the asthetics of the site. The background colour changes to the yellow, marking it as a clear change from the landing area. The game has already been loaded when the page itself loaded so everything is ready to go. 
 
 ![main game](documentation/maingame.png)
 
@@ -104,7 +103,7 @@ Once scrolled down from the landing area the user will be brought directly to th
 
 This feature is above the game board, and consits of two pieces, the moves counter and the time counter. 
 
-The moves counter does as it implies counts the number of moves or flips the user has played in the current game. It is set to zero, until the first card of a particular game is clicked. It will count every single flip of a game until either the time runs out or until the user finds all the matches. This is a key feature of the game. While the main aim is to find all the matches before the timer runs out, this ability to count the number of moves it took to complete, encourages the user to keep trying the game in order to complete it in less moves,  more fun and competitivness! The functionality of the move counter is contained in the script.js file, counting the clicks on cards and updating the index.html file with each flip.
+The moves counter does as it implies counts the number of moves or flips the user has played in the current game. It is set to zero, until the first card of a particular game is clicked. It will count every single flip of a game until either the time runs out or until the user finds all the matches. This is a key feature of the game. While the main aim is to find all the matches before the timer runs out, this ability to count the number of moves it took to complete, encourages the user to keep trying the game in order to complete it in less moves, more fun and competitivness! The functionality of the move counter is contained in the script.js file, counting the clicks on cards and updating the index.html file with each flip.
 
 The timer counter is set to 45 seconds on loading the page, and doesn't start to count down until the user clicks the first card. If the timer reaches zero before all pairs have been found, a "times up" modal will appear, ending the current game. If the user finds all the pairs before the clock runs down a different modal will appear, congratulating them on completing the game. It is a very important feature of the game, facing the clock the user is put under pressure to click cards quickly, making previously flipped cards hard to remember. This clock is adjustable from the script.js file, I currently have it set at 45 seconds, challenging enough for younger users but not impossible to complete. It can be changed from one variable within the JavaScript code, defined high up in the line of code, and easily found. In the future features I will talk about this. In the script.js file the clock as a fuction is controlled by other events, starting it, stopping it and resetting it.
 
@@ -115,9 +114,9 @@ The status bar, which features both these objects, sits above the main game boar
 
 - **Game Board**
 
-This is the area where the game takes place. Made up of a grid of 12 cards. Each card begins face down, the back of each card has the logo of the game "M" in the centre of it. On the hidden face there is one of 6 different images, two pairs of each image. When the user clicks on a card or taps on one with a touchscreen, the card will flip over, with an animation using css styling in the style.css file. This will reveal the face of the card with the image. The user can then click any other of the 11 cards. If image on the two cards that are now flipped face up, match, they will change colour to the yellow, from the green colour, used throughout the project. The images will stay visible on the matched pairs. The user can then go on to flipp another two cards. If they flip two cards that dont have matching images, the cards will flip back over, hiding the images again. The user must continue to flip cards in sets of two until they find all the pairs or until the time runs out. Once the second card has been flipped if not a match the cards flip back over after 1.5 seconds and if a match they change colour after 0.7 seconds, allowing the flip animation to happpen smoothly, andtime for the user to register what has happened. While this is happening, the board is locked and another card cant be flipped until the timeout has finished, stopping three or more cards been flipped at once. When not matched the cards are styled with the green from the sites colour scheme, with rounded corners and box shadowing applied to give the illusion they are raised off the board. these style features are applies within the style.css file of the project.
+This is the area where the game takes place. Made up of a grid of 12 cards. Each card begins face down, the back of each card has the logo of the game "M" in the centre of it. On the hidden face there is one of 6 different images, two pairs of each image. When the user clicks on a card or taps on one with a touchscreen, the card will flip over, with an animation using css styling in the style.css file. This will reveal the face of the card with the image. The user can then click any other of the 11 cards. If image on the two cards that are now flipped face up, match, they will change colour to the yellow, from the green colour. The images will stay visible on the matched pairs. The user can then go on to flip another two cards. If they flip two cards that dont have matching images, the cards will flip back over, hiding the images again. The user must continue to flip cards in sets of two until they find all the pairs or until the time runs out. Once the second card has been flipped if not a match the cards flip back over after 1.5 seconds and if a match they change colour after 0.7 seconds, allowing the flip animation to happpen smoothly, and time for the user to register what has happened. While this is happening, the board is locked and another card can not be flipped until the timeout has finished, stopping three or more cards been flipped at once. When not matched the cards are styled with the green from the sites colour scheme, with rounded corners and box shadowing applied to give the illusion they are raised off the board. These style features are applied within the style.css file of the project.
 
-The cards are created in the index.html file, along with the "M" logo and the image on the face. This makesadding changing or removing cards easy, without having to interfere with the JavaScript code.
+The cards are created in the index.html file, along with the "M" logo and the image on the card faces. This makes adding, changing or removing cards easy, without having to interfere with the JavaScript code.
 
 Their order is shuffled on loading of the page, by a function called "suffle" in the script.js file. They are also randomly shuffled when the game is restarted from either the button/link under the game board or from either of the two pop up modals, as well as the two "Play Game" buttons/links in the landing area and the intructions area (the "play Game" re shuffle and bring the user to the game board).
 The script.js file, contains the code to activate the flips, compare if they are matches act on that comparison and what happens when the time runs out or all matches are found. 
@@ -138,14 +137,14 @@ They work to clearly notify the user the game has finished.
 
 - **Instructions Area**
 
-Below the game board area, there is an instruction area. Where there is a brief description of the rules and outline of the game. This can be accessed by clicking the how to play link below the game board which will scroll the page down to the instuctions area, or manually scroll down. this section takes up the whole window, in kepping with the header and game board area, splitting the page into 3 distinct areas. The instructions are simple and easy to understand without too mush information.
+Below the game board area, there is an instruction area. Where there is a brief description of the rules and outline of the game. This can be accessed by clicking the "how to play" link below the game board which will scroll the page down to the instuctions area, or they can manually scroll down. This section takes up the whole window, in kepping with the header and game board area, splitting the page into 3 distinct areas. The instructions are simple and easy to understand without too much information.
 
 ![Instructions area](documentation/instructions.png)
 
 
 - **Footer**
 
-At the bottom of the instructions area there is a small symbol of a 'V' which when clicked will scroll the page down to a simple and small footer, in an alternating background colour to the previous sections. This footer states who the creater of the game is. The name 'Dylan kane' is also a clickable link, linking the user to my github account. This highlights like all the other clickable text on the site with a dashed black bottom border. It is not pointed out as a link or what it links to on purpose as it is meant for the user who is interested in the game, who made it and how it was created.
+At the bottom of the instructions area there is a small symbol of a 'V' which when clicked will scroll the page down to a simple and small footer, in an alternating background colour to the previous sections. This footer states who the creater of the game is. The name 'Dylan kane' is also a clickable link, linking the user to my github account. This highlights like all the other clickable text on the site when hovered, with a dashed black bottom border. It is not pointed out as a link or what it links to on purpose as it is meant for the type user who is interested in the game, who made it and how it was created, to find it.
 
 Below this at the very bottom of the footer is a message 'enjoy' followed by an old school image created by special characters.
 
@@ -154,7 +153,7 @@ Below this at the very bottom of the footer is a message 'enjoy' followed by an 
 
 - **Favicon**
 
-This site also has a favicon, which appears beside the site name in the tab bar of the browser. I created this on the website 'favicon.io. I was able to create one using the colours of the site, identical to the logo in the header, with the same font, but in a circle shape rather that a square, whhich looks better in the tab bar.
+This site also has a favicon, which appears beside the site name in the tab bar of the browser. I created this on the website 'favicon.io'. I was able to create one using the colours of the site, identical to the logo in the header, with the same font, but in a circle shape rather that a square, which I feel looks better in the tab bar.
 
 The tool I used is free and supplied me with the image and a line of code to put into the head of the index.html file.
 
@@ -162,7 +161,7 @@ The tool I used is free and supplied me with the image and a line of code to put
 
 ### Future Features
 
-Here I will list a few ideas I have for the future to furthuer develop this project:
+Here I will list a few ideas I have for the future, to furthuer develop this project:
 
 - Add option to change the images on the cards by theme
     - A future feature that would be nice to add, is allowing the user to change the images that are on the face of the cards, this could be done by choosing from preset themes that include sets of images. his would be particularly interesting for kids. It could also include more educational content like finding matching words from different languages.
@@ -290,6 +289,6 @@ Here I will list attribution links to any borrowed code snippets, articles, or r
 
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project. His amazing patience while going through bugs and other issues with me during our meetings.
 
-- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support,for always having someone to have a look and help with problems iI was having, and an abundance of previously asked questions which ofen had the answer I was looking for.
+- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support,for always having someone to have a look and help with problems I was having, and an abundance of previously asked questions which very often had the answer I was looking for.
 
 - I would like to thank my 7 year old son Liam , for helping me with the market research on this project, playing many many online games until he became an expert and my advisor. 

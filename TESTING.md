@@ -90,25 +90,31 @@ I have manually tested the user interface of this application. The following tab
 
 It the development of this project, I came accross a few bugs, some took longer than others to overcome. The biggest bugs were in the javascript side of the application. 
 
-I found getting the logic for locking the board and disabling the cards while the flipping animation was taking place, and checking for matches without the user being able to continue to click other cards or double click the ones that are flipped.
+I found getting the logic for locking the board and disabling the cards while the flipping animation was taking place, and checking for matches without the user being able to continue to click other cards or double click the ones that are flipped to be a particular challenge. Even after finding solitons in other peoples code I stiil had some work figuring out how it was working.
 
 To overcome these issues there was a number solutions I used in conjuction with each other.
 
-Using the 'pointer-events: none' in the css, activated with the javascript code, on cards that have been flipped. i got help with this from my mentor on this project Tim Nelson
+Using the 'pointer-events: none' in the css, activated with the javascript code, on cards that have been flipped. I got help with this from my mentor on this project Tim Nelson
 
 
-Also setting a variable called 'lockBoard' to false and then changing it to true at different points of the main 'FlipCard' function. When it is set to true the 'FlipCard' function will be stopped. This system i found in the code from freecodecamp.org mentioned in the credits section of the README.md file  
+Also setting a variable called 'lockBoard' to false and then changing it to true at different points of the main 'FlipCard' function. When it is set to true the 'FlipCard' function will be stopped. This system I found in the code from freecodecamp.org mentioned in the credits section of the README.md file  
+
+I also came across bugs in the clock function, where the clock would continue to count down, not stop when I needed it to or starting at the wrong times. The solution to some of the issues came from re placing the code in better places for order of functionality as well as getting a better understanding on how the  "clearInterval" function should be used.
 
 ## Unfixed Bugs
 
 - An issue that I am still having with the project is fine tuning the responsivness of the game board area. While I have managed to make it fit well on all screen sizes. I feel it could still have a better transition from larger screen sizes to smaller screens. The main issues lie with the move counter and timer counter above the board and the how to play and restart text links below the board, are either too close to the grid on larger screens or if I adjust thier positioning too far away aesthetically on smaller screen sizes. 
-The squares have to change aspect at smaller screens to a grid of 3 x 4 from a grid of 4 x 3. Also they reduce in size to fit, but keeping them as squares and not letting them stretch into rectangles, leaves a lot of open space in the small device screens.
-  - Possible fix: The use of the css grid properties, could help to make the board more dynamically responsive. Also more adjusting with the flex properties already in use along with more work on the media queries with margins and borders as well.
-- In the test on the javascript for this porject, an error or warning was shown, in the jshit validation test. "Confusing use of '!'".  I understand what is beig pointed out here, however another way i had it written originally, I found to actual be mor confusing. It is part of the clock function, with an if/else statement. I decided it read better to check if the clock is not equal to 0 decrement the clock by intervals of 1 second, if it is 0 then activate the times up modal. The order of the statment, makes more sense in my opinion. 
-  - Possible fix: It could be written in reverse so the if(!seconds <= 0) would not have to be used, but just if(seconds <= 0) and declare the times up modal before the decrementation of the seconds. I feel this would read wrong.
-![screenshot](documentation/screenshot-javascript.png) 
+The squares have to change aspect at smaller screens to a grid of 3 x 4 from a grid of 4 x 3. Also they change in size to fit, but keeping them as squares and not letting them stretch into rectangles. This leaves a lot of open space in the small device screens.
+
+    - Possible fix: The use of the css grid properties, could help to make the board more dynamically responsive. Also more adjusting with the flex properties already in use along with more work on the media queries with margins and borders as well, could help to tweak the layout.
+
+- In the test on the javascript for this porject, an error or warning was shown, in the jshint validation test. "Confusing use of '!'".  I understand what is beig pointed out here, however another way I had it written originally, I found to actually be more confusing. It is part of the clock function, with an if/else statement. I decided it read better to check if the clock is not equal to 0 decrement the clock by intervals of 1 second, if it is 0 then activate the times up modal. The order of the statment, makes more sense in my opinion. So I decided to leave the warning there. 
+
+    - Possible fix: It could be written in reverse so the if(!seconds <= 0) would not have to be used, but just if(seconds <= 0) and declare the times up modal before the decrementation of the seconds. I feel this would read wrong from a human aspect.
+![screenshot](documentation/jshint-screenshot.png) 
+
 - Commit Messages
-  - I am aware of a few mistakes / inconsistencies in my commit messages with typos, and clarity. I became aware of these, and have worked to create short meaningful commit messages from that point on and going forward. 
+    - I am aware of a few mistakes / inconsistencies in my commit messages with typos, and clarity. I became aware of these during the development of this project, and have worked to create short meaningful commit messages from that point on and going forward. 
 
 
-There are no other bugs or issues that I am currently aware of remaining bugs that I am aware of.
+There are no other bugs or issues that I am currently aware of.
